@@ -72,15 +72,17 @@ function LoginView({ onSuccess }: { onSuccess: () => void }) {
       }}>
         {/* Logo mark */}
         <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
-          <div style={{
-            width: "64px", height: "64px", borderRadius: "18px",
-            background: "linear-gradient(135deg, #F59E0B, #D97706)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            margin: "0 auto 1.25rem", fontSize: "1.75rem",
-            boxShadow: "0 8px 24px rgba(245,158,11,0.35)",
-          }}>
-            ⚡
-          </div>
+          <img
+            src="/logo.png"
+            alt="Rediant Energy Industries Logo"
+            style={{
+              height: "56px",
+              width: "auto",
+              margin: "0 auto 1.25rem",
+              objectFit: "contain",
+              display: "block"
+            }}
+          />
           <h1 style={{
             fontSize: "1.5rem", fontWeight: 800, color: "#F8FAFC",
             marginBottom: "0.4rem", letterSpacing: "-0.02em",
@@ -734,12 +736,15 @@ function DashboardView({ onLogout }: { onLogout: () => void }) {
           display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-            <div style={{
-              width: "42px", height: "42px", borderRadius: "12px",
-              background: "linear-gradient(135deg, #F59E0B, #D97706)",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              fontSize: "1.25rem", boxShadow: "0 4px 12px rgba(245,158,11,0.3)",
-            }}>⚡</div>
+            <img
+              src="/logo.png"
+              alt="Rediant Energy Industries Logo"
+              style={{
+                height: "40px",
+                width: "auto",
+                objectFit: "contain"
+              }}
+            />
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "0.625rem" }}>
                 <span style={{ fontSize: "1rem", fontWeight: 800, color: "#F8FAFC", letterSpacing: "-0.02em" }}>

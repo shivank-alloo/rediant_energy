@@ -27,24 +27,14 @@ export default function Footer() {
           {/* ── Brand Column ─────────────────── */}
           <div>
             <Link href="/" style={{
-              display: "inline-flex", alignItems: "center", gap: "0.875rem",
+              display: "inline-flex", alignItems: "center",
               textDecoration: "none", marginBottom: "1.75rem",
             }}>
-              <div style={{
-                width: "40px", height: "40px", borderRadius: "10px",
-                background: "#F59E0B", display: "flex", alignItems: "center", justifyContent: "center",
-              }}>
-                <Zap size={19} style={{ color: "#0F172A" }} />
-              </div>
-              <div>
-                <div style={{ fontSize: "1rem", fontWeight: 800, letterSpacing: "-0.02em", lineHeight: 1 }}>
-                  <span style={{ color: "#FFFFFF" }}>REDIANT</span>
-                  <span style={{ color: "#F59E0B" }}>ENERGY</span>
-                </div>
-                <div style={{ fontSize: "0.65rem", color: "#64748B", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", marginTop: "3px" }}>
-                  Industrial Solutions
-                </div>
-              </div>
+              <img
+                src="/logo.png"
+                alt="Rediant Energy Industries Logo"
+                style={{ height: "48px", width: "auto", objectFit: "contain" }}
+              />
             </Link>
 
             <p style={{ color: "#64748B", fontSize: "0.9rem", lineHeight: 1.85, marginBottom: "2rem", maxWidth: "280px" }}>

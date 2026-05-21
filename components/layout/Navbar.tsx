@@ -113,18 +113,12 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-[72px] gap-8">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 shrink-0 group">
-              <div className="w-9 h-9 rounded-xl bg-[#0F172A] flex items-center justify-center group-hover:bg-[#1E293B] transition-colors duration-200">
-                <Zap size={17} className="text-[#F59E0B]" />
-              </div>
-              <div className="leading-tight">
-                <div className="font-display font-800 text-[0.95rem] font-black tracking-tight text-[#0F172A]">
-                  REDIANT<span className="text-[#F59E0B]">ENERGY</span>
-                </div>
-                <div className="text-[9px] text-slate-400 font-medium tracking-widest uppercase leading-none mt-0.5">
-                  Industrial Solutions
-                </div>
-              </div>
+            <Link href="/" className="flex items-center shrink-0">
+              <img
+                src="/logo.png"
+                alt="Rediant Energy Industries Logo"
+                style={{ height: "48px", width: "auto", objectFit: "contain" }}
+              />
             </Link>
 
             {/* Desktop Nav */}
