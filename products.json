@@ -1,0 +1,654 @@
+[
+  {
+    "id": "chem-electrode-50",
+    "name": "Chemical Earthing Electrode",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Maintenance-free chemical earthing system with backfill compound for superior conductivity.",
+    "badge": "Best Seller",
+    "icon": "⚡",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "GI / Copper Bonded"
+      },
+      {
+        "label": "Diameter",
+        "value": "50mm / 75mm / 100mm"
+      },
+      {
+        "label": "Length",
+        "value": "1.5m / 2m / 3m"
+      },
+      {
+        "label": "Standard",
+        "value": "IS 3043"
+      },
+      {
+        "label": "Resistance",
+        "value": "< 1 Ohm"
+      },
+      {
+        "label": "Life Span",
+        "value": "20+ Years"
+      }
+    ]
+  },
+  {
+    "id": "pit-chamber",
+    "name": "Earthing Pit Chamber",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Heavy-duty CI/RCC inspection pit chambers with lockable covers for maintenance access.",
+    "icon": "🔋",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Cast Iron / RCC"
+      },
+      {
+        "label": "Size",
+        "value": "300×300mm / 450×450mm"
+      },
+      {
+        "label": "Cover",
+        "value": "Lockable Lid"
+      },
+      {
+        "label": "Depth",
+        "value": "Custom"
+      },
+      {
+        "label": "Standard",
+        "value": "IS 3043"
+      },
+      {
+        "label": "Finish",
+        "value": "Hot-Dip Galvanized"
+      }
+    ]
+  },
+  {
+    "id": "gi-strip",
+    "name": "GI Earthing Strip",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Hot-dip galvanized earthing strip for busbars, panels, and structural earthing.",
+    "icon": "➖",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Hot-Dip Galvanized Steel"
+      },
+      {
+        "label": "Size",
+        "value": "25×3mm to 50×6mm"
+      },
+      {
+        "label": "Length",
+        "value": "3m / 6m Rods"
+      },
+      {
+        "label": "Standard",
+        "value": "IS 2629"
+      },
+      {
+        "label": "Coating",
+        "value": "85 microns min."
+      },
+      {
+        "label": "Application",
+        "value": "Panel / Structural"
+      }
+    ]
+  },
+  {
+    "id": "gi-perforated-tray",
+    "name": "GI Perforated Cable Tray",
+    "category": "Cable Trays & Ladders",
+    "categorySlug": "cable-tray",
+    "description": "Heavy-gauge hot-dip galvanized perforated trays for industrial cable routing.",
+    "badge": "Best Seller",
+    "icon": "📐",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "MS / GI (Hot-Dip)"
+      },
+      {
+        "label": "Width",
+        "value": "50mm – 600mm"
+      },
+      {
+        "label": "Thickness",
+        "value": "1.6mm / 2.0mm / 2.5mm"
+      },
+      {
+        "label": "Length",
+        "value": "2.5m"
+      },
+      {
+        "label": "Standard",
+        "value": "BS EN 61537"
+      },
+      {
+        "label": "Load",
+        "value": "Up to 75 kg/m"
+      }
+    ]
+  },
+  {
+    "id": "gi-ladder-tray",
+    "name": "GI Ladder Cable Tray",
+    "category": "Cable Trays & Ladders",
+    "categorySlug": "cable-tray",
+    "description": "Ladder-type cable trays for large, heavy power and armoured cable installations.",
+    "icon": "🪜",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "GI / Stainless Steel"
+      },
+      {
+        "label": "Width",
+        "value": "100mm – 900mm"
+      },
+      {
+        "label": "Rung Spacing",
+        "value": "150mm / 300mm"
+      },
+      {
+        "label": "Standard",
+        "value": "IEC 61537"
+      },
+      {
+        "label": "Depth",
+        "value": "50mm / 100mm"
+      },
+      {
+        "label": "Load Capacity",
+        "value": "Up to 200 kg/m"
+      }
+    ]
+  },
+  {
+    "id": "aluminum-tray",
+    "name": "Aluminium Cable Tray",
+    "category": "Cable Trays & Ladders",
+    "categorySlug": "cable-tray",
+    "description": "Lightweight extruded aluminium trays ideal for offshore, marine, and corrosive environments.",
+    "icon": "🔩",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "6063-T5 Aluminium Alloy"
+      },
+      {
+        "label": "Width",
+        "value": "100mm – 600mm"
+      },
+      {
+        "label": "Thickness",
+        "value": "2.0mm / 2.5mm"
+      },
+      {
+        "label": "Standard",
+        "value": "BS EN 61537"
+      },
+      {
+        "label": "Weight",
+        "value": "70% Lighter than GI"
+      },
+      {
+        "label": "Corrosion",
+        "value": "Excellent Resistance"
+      }
+    ]
+  },
+  {
+    "id": "mono-perc-panel",
+    "name": "Mono PERC Solar Panel",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "High-efficiency monocrystalline PERC panels for commercial and industrial rooftop installations.",
+    "badge": "",
+    "icon": "☀️",
+    "specs": [
+      {
+        "label": "Wattage",
+        "value": "350W – 540W"
+      },
+      {
+        "label": "Efficiency",
+        "value": "Up to 21.5%"
+      },
+      {
+        "label": "Cell Type",
+        "value": "Mono PERC Half-Cell"
+      },
+      {
+        "label": "Dimensions",
+        "value": "1756×1056×35mm"
+      },
+      {
+        "label": "Standard",
+        "value": "IEC 61215 / IEC 61730"
+      },
+      {
+        "label": "Warranty",
+        "value": "25 Years Performance"
+      }
+    ]
+  },
+  {
+    "id": "on-grid-inverter",
+    "name": "On-Grid Solar Inverter",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "String inverters with MPPT tracking and remote monitoring for grid-tied systems.",
+    "icon": "⚙️",
+    "specs": [
+      {
+        "label": "Capacity",
+        "value": "5kW – 100kW"
+      },
+      {
+        "label": "MPPT",
+        "value": "2 – 6 Trackers"
+      },
+      {
+        "label": "Efficiency",
+        "value": "98.4% max."
+      },
+      {
+        "label": "Standard",
+        "value": "IEC 62109"
+      },
+      {
+        "label": "Grid",
+        "value": "3-Phase / Single Phase"
+      },
+      {
+        "label": "Monitoring",
+        "value": "Wi-Fi / RS485"
+      }
+    ]
+  },
+  {
+    "id": "solar-mounting",
+    "name": "Solar Mounting Structure",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "Hot-dip galvanized steel mounting structures for flat rooftop and ground-mounted systems.",
+    "icon": "🏗️",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "GI Steel / Aluminium"
+      },
+      {
+        "label": "Tilt Angle",
+        "value": "10° – 30° (Adjustable)"
+      },
+      {
+        "label": "Load",
+        "value": "Wind: 150 km/h"
+      },
+      {
+        "label": "Standard",
+        "value": "IS 875 Part 3"
+      },
+      {
+        "label": "Coating",
+        "value": "85 microns HDG"
+      },
+      {
+        "label": "Life",
+        "value": "25 Years"
+      }
+    ]
+  },
+  {
+    "id": "led-street-light-100w",
+    "name": "LED Street Light 100W",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "High-lumen LED street lights with photocell control for roads, highways, and industrial areas.",
+    "badge": "",
+    "icon": "💡",
+    "specs": [
+      {
+        "label": "Wattage",
+        "value": "100W (±5%)"
+      },
+      {
+        "label": "Lumens",
+        "value": "12,000 lm"
+      },
+      {
+        "label": "CCT",
+        "value": "5000K / 6000K"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP66"
+      },
+      {
+        "label": "CRI",
+        "value": "> 80"
+      },
+      {
+        "label": "Life Span",
+        "value": "50,000 Hours"
+      }
+    ]
+  },
+  {
+    "id": "led-highbay-200w",
+    "name": "LED High Bay Light 200W",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Industrial high-bay LED fittings for warehouses, factories, and sports facilities.",
+    "icon": "🔦",
+    "specs": [
+      {
+        "label": "Wattage",
+        "value": "200W"
+      },
+      {
+        "label": "Lumens",
+        "value": "24,000 lm"
+      },
+      {
+        "label": "CCT",
+        "value": "4000K / 5000K / 6500K"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP65"
+      },
+      {
+        "label": "Mounting",
+        "value": "Hook / Direct"
+      },
+      {
+        "label": "Beam Angle",
+        "value": "90° / 120°"
+      }
+    ]
+  },
+  {
+    "id": "led-panel-light",
+    "name": "LED Panel Light 40W",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Ultra-slim LED panel lights for commercial offices, hospitals, and clean rooms.",
+    "icon": "🟦",
+    "specs": [
+      {
+        "label": "Wattage",
+        "value": "40W"
+      },
+      {
+        "label": "Size",
+        "value": "600×600mm / 1200×300mm"
+      },
+      {
+        "label": "Lumens",
+        "value": "4,400 lm"
+      },
+      {
+        "label": "CCT",
+        "value": "3000K / 4000K / 6500K"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP40"
+      },
+      {
+        "label": "Driver",
+        "value": "Integrated Flicker-Free"
+      }
+    ]
+  },
+  {
+    "id": "fr-pvc-wire",
+    "name": "FR PVC Copper Wire",
+    "category": "Wires & Armoured Cables",
+    "categorySlug": "cables",
+    "description": "Flame retardant PVC insulated copper conductor wires for industrial and household wiring.",
+    "badge": "ISO Certified",
+    "icon": "🔌",
+    "specs": [
+      {
+        "label": "Conductor",
+        "value": "Annealed Copper"
+      },
+      {
+        "label": "Size",
+        "value": "1.5mm² – 16mm²"
+      },
+      {
+        "label": "Insulation",
+        "value": "FR PVC"
+      },
+      {
+        "label": "Standard",
+        "value": "IS 694"
+      },
+      {
+        "label": "Voltage",
+        "value": "1100V"
+      },
+      {
+        "label": "Temperature",
+        "value": "-20°C to +70°C"
+      }
+    ]
+  },
+  {
+    "id": "armoured-cable",
+    "name": "Armoured SWA Power Cable",
+    "category": "Wires & Armoured Cables",
+    "categorySlug": "cables",
+    "description": "Steel wire armoured XLPE insulated power cables for heavy industrial and underground installations.",
+    "icon": "🧶",
+    "specs": [
+      {
+        "label": "Conductor",
+        "value": "Stranded Copper / Aluminium"
+      },
+      {
+        "label": "Size",
+        "value": "2.5mm² – 300mm²"
+      },
+      {
+        "label": "Insulation",
+        "value": "XLPE"
+      },
+      {
+        "label": "Armour",
+        "value": "SWA (Steel Wire)"
+      },
+      {
+        "label": "Standard",
+        "value": "IS 7098 / IEC 60502"
+      },
+      {
+        "label": "Voltage",
+        "value": "1.1kV / 3.3kV / 11kV"
+      }
+    ]
+  },
+  {
+    "id": "flexible-cable",
+    "name": "Industrial Flexible Cable",
+    "category": "Wires & Armoured Cables",
+    "categorySlug": "cables",
+    "description": "Multi-core flexible cables for motor connections, machinery, and control panels.",
+    "icon": "〰️",
+    "specs": [
+      {
+        "label": "Core",
+        "value": "2C / 3C / 4C / 5C"
+      },
+      {
+        "label": "Size",
+        "value": "1.5mm² – 35mm²"
+      },
+      {
+        "label": "Insulation",
+        "value": "PVC / XLPE"
+      },
+      {
+        "label": "Standard",
+        "value": "IS 9968 / IEC 60245"
+      },
+      {
+        "label": "Voltage",
+        "value": "1100V"
+      },
+      {
+        "label": "Flex Rating",
+        "value": "Class 5 Flex"
+      }
+    ]
+  },
+  {
+    "id": "brass-cable-gland-a1",
+    "name": "Brass Cable Gland Type A1",
+    "category": "Cable Glands & Junction Boxes",
+    "categorySlug": "cable-gland",
+    "description": "Type A1 brass cable glands for single-core and plastic sheathed cables without armour.",
+    "badge": "Best Seller",
+    "icon": "🔩",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Brass (60/40)"
+      },
+      {
+        "label": "Size",
+        "value": "PG7 – PG48 / M16 – M63"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP65 / IP68"
+      },
+      {
+        "label": "Standard",
+        "value": "BS 6121 / IS 12943"
+      },
+      {
+        "label": "Finish",
+        "value": "Natural / Nickel Plated"
+      },
+      {
+        "label": "Armour",
+        "value": "Unarmoured Only"
+      }
+    ]
+  },
+  {
+    "id": "brass-cable-gland-a2",
+    "name": "Brass Cable Gland Type A2",
+    "category": "Cable Glands & Junction Boxes",
+    "categorySlug": "cable-gland",
+    "description": "Type A2 brass glands for SWA and armoured cables with earth continuity.",
+    "icon": "⚙️",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Brass (60/40)"
+      },
+      {
+        "label": "Size",
+        "value": "M20 – M75"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP66 / IP68"
+      },
+      {
+        "label": "Standard",
+        "value": "BS 6121 Part 1"
+      },
+      {
+        "label": "Finish",
+        "value": "Nickel Plated"
+      },
+      {
+        "label": "Armour",
+        "value": "SWA / STA Armoured"
+      }
+    ]
+  },
+  {
+    "id": "nylon-cable-gland",
+    "name": "Nylon PG Cable Gland",
+    "category": "Cable Glands & Junction Boxes",
+    "categorySlug": "cable-gland",
+    "description": "PA66 nylon glands with excellent chemical resistance for light industrial and enclosure use.",
+    "icon": "🔵",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Polyamide PA66 (Nylon)"
+      },
+      {
+        "label": "Size",
+        "value": "PG7 – PG42 / M12 – M50"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP68"
+      },
+      {
+        "label": "Temp. Range",
+        "value": "-20°C to +100°C"
+      },
+      {
+        "label": "Standard",
+        "value": "UL / CE Certified"
+      },
+      {
+        "label": "Color",
+        "value": "Black / Grey / RAL Custom"
+      }
+    ]
+  },
+  {
+    "id": "metal-junction-box",
+    "name": "Metal Junction Box",
+    "category": "Cable Glands & Junction Boxes",
+    "categorySlug": "cable-gland",
+    "description": "Heavy-duty powder-coated steel junction boxes for industrial and outdoor electrical installations.",
+    "icon": "📦",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "MS Steel (Powder Coated)"
+      },
+      {
+        "label": "Sizes",
+        "value": "100×100mm to 600×400mm"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP55 / IP66"
+      },
+      {
+        "label": "Standard",
+        "value": "IS 2147"
+      },
+      {
+        "label": "Entry",
+        "value": "Knockouts / Threaded"
+      },
+      {
+        "label": "Color",
+        "value": "RAL 7035 Light Grey"
+      }
+    ]
+  }
+]
