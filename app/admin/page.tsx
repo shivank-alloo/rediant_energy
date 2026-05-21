@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, Fragment } from "react";
 import { login, logout, checkAuth } from "@/app/actions/admin";
-import { getProducts, saveProduct, deleteProduct, addProduct } from "@/app/actions/products";
+import { getProducts, saveProduct, deleteProduct, addProduct, uploadProductImage } from "@/app/actions/products";
 import { Product, ProductSpec, CATEGORIES } from "@/lib/products";
 import {
   Eye, EyeOff, LogOut, Search, Edit3, Trash2, Plus, Save, X,
@@ -20,6 +20,7 @@ interface Toast { id: number; message: string; type: ToastType }
    LOGIN VIEW
 ──────────────────────────────────────────────── */
 function LoginView({ onSuccess }: { onSuccess: () => void }) {
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPw, setShowPw] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -29,7 +30,7 @@ function LoginView({ onSuccess }: { onSuccess: () => void }) {
     e.preventDefault();
     setLoading(true);
     setError("");
-    const res = await login(password);
+    const res = await login(email, password);
     setLoading(false);
     if (res.success) {
       onSuccess();
@@ -95,21 +96,23 @@ function LoginView({ onSuccess }: { onSuccess: () => void }) {
         </div>
 
         <form onSubmit={handleSubmit}>
-          {/* Username */}
+          {/* Email */}
           <div style={{ marginBottom: "1rem" }}>
             <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 600, color: "#94A3B8", marginBottom: "0.5rem", letterSpacing: "0.05em", textTransform: "uppercase" }}>
-              Username
+              Email Address
             </label>
             <input
-              type="text"
-              name="username"
-              value="admin"
-              readOnly
+              type="email"
+              placeholder="admin@rediantenergy.com"
+              value={email}
+              onChange={(e) => { setEmail(e.target.value); setError(""); }}
+              required
               style={{
                 width: "100%", boxSizing: "border-box",
-                background: "rgba(15,23,42,0.4)", border: "1.5px solid rgba(148,163,184,0.1)",
-                borderRadius: "12px", padding: "0.875rem 1rem", color: "#64748B",
-                fontSize: "0.9rem", outline: "none", cursor: "not-allowed",
+                background: "rgba(15,23,42,0.6)", border: `1.5px solid ${error ? "#EF4444" : "rgba(148,163,184,0.15)"}`,
+                borderRadius: "12px", padding: "0.875rem 1rem", color: "#F8FAFC",
+                fontSize: "0.9rem", outline: "none",
+                transition: "border-color 0.2s",
               }}
             />
           </div>
@@ -156,15 +159,15 @@ function LoginView({ onSuccess }: { onSuccess: () => void }) {
 
           <button
             type="submit"
-            disabled={loading || !password}
+            disabled={loading || !email || !password}
             style={{
               width: "100%", padding: "0.9rem",
-              background: loading || !password ? "rgba(245,158,11,0.4)" : "linear-gradient(135deg, #F59E0B, #D97706)",
+              background: loading || !email || !password ? "rgba(245,158,11,0.4)" : "linear-gradient(135deg, #F59E0B, #D97706)",
               border: "none", borderRadius: "12px",
               color: "#0F172A", fontWeight: 800, fontSize: "0.9rem",
-              cursor: loading || !password ? "not-allowed" : "pointer",
+              cursor: loading || !email || !password ? "not-allowed" : "pointer",
               transition: "all 0.2s", letterSpacing: "0.02em",
-              boxShadow: loading || !password ? "none" : "0 4px 16px rgba(245,158,11,0.35)",
+              boxShadow: loading || !email || !password ? "none" : "0 4px 16px rgba(245,158,11,0.35)",
             }}
           >
             {loading ? "Authenticating…" : "Sign In →"}
@@ -193,6 +196,22 @@ function SpecsEditorModal({
 }) {
   const [form, setForm] = useState<Product>({ ...product, specs: product.specs.map((s) => ({ ...s })) });
   const [saving, setSaving] = useState(false);
+  const [uploading, setUploading] = useState(false);
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setUploading(true);
+    const formData = new FormData();
+    formData.append("file", file);
+    const res = await uploadProductImage(formData);
+    setUploading(false);
+    if (res.success && res.url) {
+      updateField("image", res.url);
+    } else {
+      alert(res.error || "Failed to upload image.");
+    }
+  };
 
   const updateField = (field: keyof Product, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -330,9 +349,53 @@ function SpecsEditorModal({
                 ))}
               </select>
             </div>
-            <div style={{ gridColumn: "1 / -1" }}>
-              <label style={labelStyle}>Image Path (optional)</label>
-              <input style={inputStyle} value={form.image ?? ""} onChange={(e) => updateField("image", e.target.value)} placeholder="e.g. /images/earthing_electrode.png" />
+            <div style={{ gridColumn: "1 / -1", background: "rgba(15,23,42,0.2)", padding: "1.25rem", borderRadius: "12px", border: "1px dashed rgba(148,163,184,0.15)" }}>
+              <label style={labelStyle}>Product Image</label>
+              <div style={{ display: "flex", gap: "1.25rem", alignItems: "center" }}>
+                {form.image && (
+                  <img
+                    src={form.image}
+                    alt="Product preview"
+                    style={{ width: "64px", height: "64px", borderRadius: "8px", objectFit: "cover", border: "1px solid rgba(148,163,184,0.2)" }}
+                  />
+                )}
+                <div style={{ flex: 1 }}>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleImageUpload}
+                    disabled={uploading}
+                    style={{ display: "none" }}
+                    id="edit-product-image-file"
+                  />
+                  <label
+                    htmlFor="edit-product-image-file"
+                    style={{
+                      display: "inline-block",
+                      padding: "0.5rem 1rem",
+                      background: "rgba(245,158,11,0.15)",
+                      border: "1px solid rgba(245,158,11,0.3)",
+                      color: "#F59E0B",
+                      borderRadius: "8px",
+                      fontSize: "0.75rem",
+                      fontWeight: 600,
+                      cursor: uploading ? "not-allowed" : "pointer",
+                      transition: "all 0.2s",
+                    }}
+                  >
+                    {uploading ? "Uploading..." : "Upload Image"}
+                  </label>
+                  <div style={{ fontSize: "0.72rem", color: "#64748B", marginTop: "0.4rem" }}>
+                    Or enter/modify the path manually below:
+                  </div>
+                  <input
+                    style={{ ...inputStyle, marginTop: "0.5rem" }}
+                    value={form.image ?? ""}
+                    onChange={(e) => updateField("image", e.target.value)}
+                    placeholder="e.g. /images/earthing_electrode.png"
+                  />
+                </div>
+              </div>
             </div>
             <div style={{ gridColumn: "1 / -1" }}>
               <label style={labelStyle}>Description</label>
@@ -444,6 +507,22 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
   });
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
+  const [uploading, setUploading] = useState(false);
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setUploading(true);
+    const formData = new FormData();
+    formData.append("file", file);
+    const res = await uploadProductImage(formData);
+    setUploading(false);
+    if (res.success && res.url) {
+      setForm((p) => ({ ...p, image: res.url }));
+    } else {
+      setError(res.error || "Failed to upload image.");
+    }
+  };
 
   useEffect(() => {
     const h = (e: KeyboardEvent) => e.key === "Escape" && onClose();
@@ -555,10 +634,53 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
                 ))}
               </select>
             </div>
-            <div style={{ gridColumn: "1 / -1" }}>
-              <label style={labelStyle}>Image Path (optional)</label>
-              <input style={inputStyle} placeholder="e.g. /images/earthing_electrode.png" value={form.image ?? ""}
-                onChange={(e) => setForm((p) => ({ ...p, image: e.target.value }))} />
+            <div style={{ gridColumn: "1 / -1", background: "rgba(15,23,42,0.2)", padding: "1.25rem", borderRadius: "12px", border: "1px dashed rgba(148,163,184,0.15)" }}>
+              <label style={labelStyle}>Product Image</label>
+              <div style={{ display: "flex", gap: "1.25rem", alignItems: "center" }}>
+                {form.image && (
+                  <img
+                    src={form.image}
+                    alt="Product preview"
+                    style={{ width: "64px", height: "64px", borderRadius: "8px", objectFit: "cover", border: "1px solid rgba(148,163,184,0.2)" }}
+                  />
+                )}
+                <div style={{ flex: 1 }}>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleImageUpload}
+                    disabled={uploading}
+                    style={{ display: "none" }}
+                    id="add-product-image-file"
+                  />
+                  <label
+                    htmlFor="add-product-image-file"
+                    style={{
+                      display: "inline-block",
+                      padding: "0.5rem 1rem",
+                      background: "rgba(245,158,11,0.15)",
+                      border: "1px solid rgba(245,158,11,0.3)",
+                      color: "#F59E0B",
+                      borderRadius: "8px",
+                      fontSize: "0.75rem",
+                      fontWeight: 600,
+                      cursor: uploading ? "not-allowed" : "pointer",
+                      transition: "all 0.2s",
+                    }}
+                  >
+                    {uploading ? "Uploading..." : "Upload Image"}
+                  </label>
+                  <div style={{ fontSize: "0.72rem", color: "#64748B", marginTop: "0.4rem" }}>
+                    Or enter/modify the path manually below:
+                  </div>
+                  <input
+                    style={{ ...inputStyle, marginTop: "0.5rem" }}
+                    value={form.image ?? ""}
+                    onChange={(e) => setForm((p) => ({ ...p, image: e.target.value }))}
+                    placeholder="e.g. /images/earthing_electrode.png"
+                  />
+                </div>
+              </div>
             </div>
             <div style={{ gridColumn: "1 / -1" }}>
               <label style={labelStyle}>Description</label>

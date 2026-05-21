@@ -2,13 +2,20 @@
 
 import { cookies } from "next/headers";
 
-const ADMIN_PASSWORD = "rediant_admin";
+const ADMIN_ACCOUNTS = [
+  { email: "admin@rediantenergy.com", password: "rediant_admin" },
+  { email: "sales@rediantenergy.com", password: "sales_admin" },
+];
+
 const SESSION_COOKIE = "rediant_admin_session";
 const SESSION_VALUE = "authenticated";
 
-export async function login(password: string): Promise<{ success: boolean; error?: string }> {
-  if (password !== ADMIN_PASSWORD) {
-    return { success: false, error: "Invalid password. Please try again." };
+export async function login(email: string, password: string): Promise<{ success: boolean; error?: string }> {
+  const account = ADMIN_ACCOUNTS.find(
+    (acc) => acc.email.toLowerCase() === email.toLowerCase() && acc.password === password
+  );
+  if (!account) {
+    return { success: false, error: "Invalid email or password. Please try again." };
   }
   const cookieStore = await cookies();
   cookieStore.set(SESSION_COOKIE, SESSION_VALUE, {
