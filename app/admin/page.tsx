@@ -40,12 +40,9 @@ function LoginView({ onSuccess }: { onSuccess: () => void }) {
   };
 
   return (
-    <div style={{
-      minHeight: "100vh",
+    <div className="min-h-screen flex items-center justify-center p-4 sm:p-8" style={{
       background: "linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%)",
-      display: "flex", alignItems: "center", justifyContent: "center",
       fontFamily: "'Inter', 'SF Pro Display', system-ui, sans-serif",
-      padding: "2rem",
     }}>
       {/* Ambient glow blobs */}
       <div style={{
@@ -61,14 +58,12 @@ function LoginView({ onSuccess }: { onSuccess: () => void }) {
         pointerEvents: "none", borderRadius: "50%",
       }} />
 
-      <div style={{
-        width: "100%", maxWidth: "420px",
+      <div className="w-full max-w-[420px] p-6 sm:p-10" style={{
         background: "rgba(30, 41, 59, 0.9)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
         border: "1px solid rgba(148,163,184,0.15)",
         borderRadius: "24px",
-        padding: "3rem 2.5rem",
         boxShadow: "0 40px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.03) inset",
       }}>
         {/* Logo mark */}
@@ -262,33 +257,25 @@ function SpecsEditorModal({
   return (
     <div
       onClick={onClose}
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6"
       style={{
-        position: "fixed", inset: 0, zIndex: 9999,
         background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)",
         WebkitBackdropFilter: "blur(8px)",
-        display: "flex", alignItems: "center", justifyContent: "center",
-        padding: "1.5rem",
       }}
     >
       <div
         onClick={(e) => e.stopPropagation()}
+        className="w-full max-w-[760px] max-h-[90vh] flex flex-col overflow-hidden"
         style={{
-          width: "min(760px, 100%)", maxHeight: "90vh",
           background: "#1E293B",
           border: "1px solid rgba(148,163,184,0.15)",
           borderRadius: "20px",
-          display: "flex", flexDirection: "column",
           boxShadow: "0 40px 80px rgba(0,0,0,0.6)",
-          overflow: "hidden",
           fontFamily: "'Inter', system-ui, sans-serif",
         }}
       >
         {/* Modal Header */}
-        <div style={{
-          padding: "1.5rem 2rem", flexShrink: 0,
-          borderBottom: "1px solid rgba(148,163,184,0.1)",
-          display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem",
-        }}>
+        <div className="p-4 sm:p-6 flex items-center justify-between gap-4 border-b border-[rgba(148,163,184,0.1)] flex-shrink-0">
           <div style={{ display: "flex", alignItems: "center", gap: "0.875rem" }}>
             <div style={{
               width: "44px", height: "44px", borderRadius: "12px",
@@ -315,14 +302,11 @@ function SpecsEditorModal({
         </div>
 
         {/* Scrollable Body */}
-        <div style={{ overflowY: "auto", flex: 1, padding: "2rem" }}>
+        <div className="overflow-y-auto flex-1 p-4 sm:p-8">
 
           {/* Basic Fields */}
-          <div style={{
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem",
-            marginBottom: "1.5rem",
-          }}>
-            <div style={{ gridColumn: "1 / -1" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <div className="col-span-1 sm:col-span-2">
               <label style={labelStyle}>Product Name</label>
               <input style={inputStyle} value={form.name} onChange={(e) => updateField("name", e.target.value)} />
             </div>
@@ -334,7 +318,7 @@ function SpecsEditorModal({
               <label style={labelStyle}>Badge (optional)</label>
               <input style={inputStyle} value={form.badge ?? ""} onChange={(e) => updateField("badge", e.target.value)} placeholder="e.g. Best Seller" />
             </div>
-            <div>
+            <div className="col-span-1 sm:col-span-2">
               <label style={labelStyle}>Category</label>
               <select
                 style={{ ...inputStyle, cursor: "pointer" }}
@@ -349,9 +333,9 @@ function SpecsEditorModal({
                 ))}
               </select>
             </div>
-            <div style={{ gridColumn: "1 / -1", background: "rgba(15,23,42,0.2)", padding: "1.25rem", borderRadius: "12px", border: "1px dashed rgba(148,163,184,0.15)" }}>
+            <div className="col-span-1 sm:col-span-2 bg-[rgba(15,23,42,0.2)] p-4 sm:p-5 rounded-xl border border-dashed border-[rgba(148,163,184,0.15)]">
               <label style={labelStyle}>Product Image</label>
-              <div style={{ display: "flex", gap: "1.25rem", alignItems: "center" }}>
+              <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
                 {form.image && (
                   <img
                     src={form.image}
@@ -397,7 +381,7 @@ function SpecsEditorModal({
                 </div>
               </div>
             </div>
-            <div style={{ gridColumn: "1 / -1" }}>
+            <div className="col-span-1 sm:col-span-2">
               <label style={labelStyle}>Description</label>
               <textarea
                 style={{ ...inputStyle, minHeight: "80px", resize: "vertical", lineHeight: 1.6 }}
@@ -426,36 +410,32 @@ function SpecsEditorModal({
               </button>
             </div>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.625rem" }}>
+            <div className="flex flex-col gap-3">
               {form.specs.map((spec, idx) => (
-                <div key={idx} style={{
-                  display: "grid", gridTemplateColumns: "1fr 1fr auto",
-                  gap: "0.625rem", alignItems: "center",
-                  background: "rgba(15,23,42,0.4)", borderRadius: "10px", padding: "0.75rem",
-                  border: "1px solid rgba(148,163,184,0.08)",
-                }}>
-                  <input
-                    style={inputStyle}
-                    placeholder="Label (e.g. Material)"
-                    value={spec.label}
-                    onChange={(e) => updateSpec(idx, "label", e.target.value)}
-                  />
-                  <input
-                    style={inputStyle}
-                    placeholder="Value (e.g. GI / Copper)"
-                    value={spec.value}
-                    onChange={(e) => updateSpec(idx, "value", e.target.value)}
-                  />
+                <div key={idx} className="flex flex-col sm:flex-row gap-2 items-stretch sm:items-center bg-[rgba(15,23,42,0.4)] rounded-xl p-3 border border-[rgba(148,163,184,0.08)]">
+                  <div className="flex flex-col sm:flex-row gap-2 flex-1">
+                    <input
+                      style={inputStyle}
+                      placeholder="Label (e.g. Material)"
+                      value={spec.label}
+                      onChange={(e) => updateSpec(idx, "label", e.target.value)}
+                    />
+                    <input
+                      style={inputStyle}
+                      placeholder="Value (e.g. GI / Copper)"
+                      value={spec.value}
+                      onChange={(e) => updateSpec(idx, "value", e.target.value)}
+                    />
+                  </div>
                   <button
                     onClick={() => removeSpec(idx)}
+                    className="h-10 w-full sm:w-10 sm:h-10 flex items-center justify-center rounded-lg border cursor-pointer"
                     style={{
-                      width: "34px", height: "34px", borderRadius: "8px",
                       background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.2)",
-                      color: "#EF4444", display: "flex", alignItems: "center", justifyContent: "center",
-                      cursor: "pointer", flexShrink: 0,
+                      color: "#EF4444", flexShrink: 0,
                     }}
                   >
-                    <X size={14} />
+                    <X size={16} />
                   </button>
                 </div>
               ))}
@@ -464,13 +444,10 @@ function SpecsEditorModal({
         </div>
 
         {/* Footer */}
-        <div style={{
-          padding: "1.25rem 2rem", flexShrink: 0,
-          borderTop: "1px solid rgba(148,163,184,0.1)",
+        <div className="p-4 sm:px-8 sm:py-5 flex flex-col-reverse sm:flex-row gap-3 justify-end border-t border-[rgba(148,163,184,0.1)] flex-shrink-0" style={{
           background: "rgba(15,23,42,0.5)",
-          display: "flex", gap: "0.75rem", justifyContent: "flex-end",
         }}>
-          <button onClick={onClose} style={{
+          <button onClick={onClose} className="w-full sm:w-auto" style={{
             padding: "0.7rem 1.5rem", borderRadius: "10px",
             background: "rgba(148,163,184,0.1)", border: "1px solid rgba(148,163,184,0.15)",
             color: "#94A3B8", fontSize: "0.875rem", fontWeight: 600, cursor: "pointer",
@@ -480,8 +457,8 @@ function SpecsEditorModal({
           <button
             onClick={handleSave}
             disabled={saving}
+            className="w-full sm:w-auto flex items-center justify-center gap-2"
             style={{
-              display: "flex", alignItems: "center", gap: "0.5rem",
               padding: "0.7rem 1.75rem", borderRadius: "10px",
               background: saving ? "rgba(245,158,11,0.4)" : "linear-gradient(135deg, #F59E0B, #D97706)",
               border: "none", color: "#0F172A", fontSize: "0.875rem",
@@ -552,24 +529,17 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
   };
 
   return (
-    <div onClick={onClose} style={{
-      position: "fixed", inset: 0, zIndex: 9999,
+    <div onClick={onClose} className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6" style={{
       background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)",
       WebkitBackdropFilter: "blur(8px)",
-      display: "flex", alignItems: "center", justifyContent: "center", padding: "1.5rem",
     }}>
-      <div onClick={(e) => e.stopPropagation()} style={{
-        width: "min(700px, 100%)", maxHeight: "90vh",
+      <div onClick={(e) => e.stopPropagation()} className="w-full max-w-[700px] max-h-[90vh] flex flex-col overflow-hidden" style={{
         background: "#1E293B", border: "1px solid rgba(148,163,184,0.15)",
-        borderRadius: "20px", display: "flex", flexDirection: "column",
-        boxShadow: "0 40px 80px rgba(0,0,0,0.6)", overflow: "hidden",
+        borderRadius: "20px",
+        boxShadow: "0 40px 80px rgba(0,0,0,0.6)",
         fontFamily: "'Inter', system-ui, sans-serif",
       }}>
-        <div style={{
-          padding: "1.5rem 2rem", flexShrink: 0,
-          borderBottom: "1px solid rgba(148,163,184,0.1)",
-          display: "flex", alignItems: "center", justifyContent: "space-between",
-        }}>
+        <div className="p-4 sm:p-6 flex items-center justify-between gap-4 border-b border-[rgba(148,163,184,0.1)] flex-shrink-0">
           <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
             <div style={{
               width: "40px", height: "40px", borderRadius: "10px",
@@ -589,7 +559,7 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
           </button>
         </div>
 
-        <div style={{ overflowY: "auto", flex: 1, padding: "2rem" }}>
+        <div className="overflow-y-auto flex-1 p-4 sm:p-8">
           {error && (
             <div style={{
               display: "flex", alignItems: "center", gap: "0.5rem",
@@ -600,7 +570,7 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
               <AlertCircle size={14} /> {error}
             </div>
           )}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginBottom: "1.5rem" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             <div>
               <label style={labelStyle}>Product ID (unique slug)</label>
               <input style={inputStyle} placeholder="e.g. gi-rod-25mm" value={form.id}
@@ -621,7 +591,7 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
               <input style={inputStyle} placeholder="e.g. New Arrival" value={form.badge ?? ""}
                 onChange={(e) => setForm((p) => ({ ...p, badge: e.target.value }))} />
             </div>
-            <div>
+            <div className="col-span-1 sm:col-span-2">
               <label style={labelStyle}>Category</label>
               <select style={{ ...inputStyle, cursor: "pointer" }}
                 value={form.categorySlug}
@@ -634,9 +604,9 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
                 ))}
               </select>
             </div>
-            <div style={{ gridColumn: "1 / -1", background: "rgba(15,23,42,0.2)", padding: "1.25rem", borderRadius: "12px", border: "1px dashed rgba(148,163,184,0.15)" }}>
+            <div className="col-span-1 sm:col-span-2 bg-[rgba(15,23,42,0.2)] p-4 sm:p-5 rounded-xl border border-dashed border-[rgba(148,163,184,0.15)]">
               <label style={labelStyle}>Product Image</label>
-              <div style={{ display: "flex", gap: "1.25rem", alignItems: "center" }}>
+              <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
                 {form.image && (
                   <img
                     src={form.image}
@@ -682,7 +652,7 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
                 </div>
               </div>
             </div>
-            <div style={{ gridColumn: "1 / -1" }}>
+            <div className="col-span-1 sm:col-span-2">
               <label style={labelStyle}>Description</label>
               <textarea style={{ ...inputStyle, minHeight: "70px", resize: "vertical", lineHeight: 1.6 }}
                 value={form.description}
@@ -706,25 +676,22 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
                 <Plus size={13} /> Add Row
               </button>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.625rem" }}>
+            <div className="flex flex-col gap-3">
               {form.specs.map((spec, idx) => (
-                <div key={idx} style={{
-                  display: "grid", gridTemplateColumns: "1fr 1fr auto",
-                  gap: "0.625rem", alignItems: "center",
-                  background: "rgba(15,23,42,0.4)", borderRadius: "10px", padding: "0.75rem",
-                  border: "1px solid rgba(148,163,184,0.08)",
-                }}>
-                  <input style={inputStyle} placeholder="Label" value={spec.label}
-                    onChange={(e) => setForm((p) => ({ ...p, specs: p.specs.map((s, i) => i === idx ? { ...s, label: e.target.value } : s) }))} />
-                  <input style={inputStyle} placeholder="Value" value={spec.value}
-                    onChange={(e) => setForm((p) => ({ ...p, specs: p.specs.map((s, i) => i === idx ? { ...s, value: e.target.value } : s) }))} />
+                <div key={idx} className="flex flex-col sm:flex-row gap-2 items-stretch sm:items-center bg-[rgba(15,23,42,0.4)] rounded-xl p-3 border border-[rgba(148,163,184,0.08)]">
+                  <div className="flex flex-col sm:flex-row gap-2 flex-1">
+                    <input style={inputStyle} placeholder="Label" value={spec.label}
+                      onChange={(e) => setForm((p) => ({ ...p, specs: p.specs.map((s, i) => i === idx ? { ...s, label: e.target.value } : s) }))} />
+                    <input style={inputStyle} placeholder="Value" value={spec.value}
+                      onChange={(e) => setForm((p) => ({ ...p, specs: p.specs.map((s, i) => i === idx ? { ...s, value: e.target.value } : s) }))} />
+                  </div>
                   <button onClick={() => setForm((p) => ({ ...p, specs: p.specs.filter((_, i) => i !== idx) }))}
+                    className="h-10 w-full sm:w-10 sm:h-10 flex items-center justify-center rounded-lg border cursor-pointer"
                     style={{
-                      width: "34px", height: "34px", borderRadius: "8px",
                       background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.2)",
-                      color: "#EF4444", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", flexShrink: 0,
+                      color: "#EF4444", flexShrink: 0,
                     }}>
-                    <X size={14} />
+                    <X size={16} />
                   </button>
                 </div>
               ))}
@@ -732,19 +699,15 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
           </div>
         </div>
 
-        <div style={{
-          padding: "1.25rem 2rem", flexShrink: 0,
-          borderTop: "1px solid rgba(148,163,184,0.1)",
+        <div className="p-4 sm:px-8 sm:py-5 flex flex-col-reverse sm:flex-row gap-3 justify-end border-t border-[rgba(148,163,184,0.1)] flex-shrink-0" style={{
           background: "rgba(15,23,42,0.5)",
-          display: "flex", gap: "0.75rem", justifyContent: "flex-end",
         }}>
           <button onClick={onClose} style={{
             padding: "0.7rem 1.5rem", borderRadius: "10px",
             background: "rgba(148,163,184,0.1)", border: "1px solid rgba(148,163,184,0.15)",
             color: "#94A3B8", fontSize: "0.875rem", fontWeight: 600, cursor: "pointer",
           }}>Cancel</button>
-          <button onClick={handleAdd} disabled={saving} style={{
-            display: "flex", alignItems: "center", gap: "0.5rem",
+          <button onClick={handleAdd} disabled={saving} className="w-full sm:w-auto flex items-center justify-center gap-2" style={{
             padding: "0.7rem 1.75rem", borderRadius: "10px",
             background: saving ? "rgba(34,197,94,0.3)" : "linear-gradient(135deg, #22C55E, #16A34A)",
             border: "none", color: "#fff", fontSize: "0.875rem",
@@ -846,17 +809,11 @@ function DashboardView({ onLogout }: { onLogout: () => void }) {
       </div>
 
       {/* Header */}
-      <header style={{
+      <header className="sticky top-0 z-[100] border-b border-[rgba(148,163,184,0.1)]" style={{
         background: "rgba(15,23,42,0.95)", backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
-        borderBottom: "1px solid rgba(148,163,184,0.1)",
-        position: "sticky", top: 0, zIndex: 100,
       }}>
-        <div style={{
-          maxWidth: "1400px", margin: "0 auto",
-          padding: "1rem 2rem",
-          display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem",
-        }}>
+        <div className="max-w-[1400px] mx-auto px-4 py-4 sm:px-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
             <img
               src="/logo.png"
@@ -887,7 +844,7 @@ function DashboardView({ onLogout }: { onLogout: () => void }) {
             </div>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+          <div className="flex items-center gap-3 sm:gap-4 justify-between sm:justify-end">
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", padding: "0.4rem 0.875rem", borderRadius: "20px", background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.2)" }}>
               <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#22C55E" }} />
               <span style={{ fontSize: "0.75rem", color: "#86EFAC", fontWeight: 600 }}>Authenticated</span>
@@ -906,19 +863,19 @@ function DashboardView({ onLogout }: { onLogout: () => void }) {
       </header>
 
       {/* Main */}
-      <main style={{ maxWidth: "1400px", margin: "0 auto", padding: "2.5rem 2rem" }}>
+      <main className="max-w-[1400px] mx-auto px-4 py-6 sm:p-8">
 
         {/* Stats */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1rem", marginBottom: "2.5rem" }}>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {[
             { icon: <Package size={20} />, label: "Total Products", value: products.length, color: "#F59E0B" },
             { icon: <LayoutDashboard size={20} />, label: "Categories", value: CATEGORIES.length - 1, color: "#818CF8" },
             { icon: <Zap size={20} />, label: "With Badge", value: products.filter((p) => p.badge).length, color: "#22C55E" },
             { icon: <Shield size={20} />, label: "Active Session", value: "1", color: "#38BDF8" },
           ].map((stat) => (
-            <div key={stat.label} style={{
+            <div key={stat.label} className="p-4 sm:p-6" style={{
               background: "rgba(30,41,59,0.8)", border: "1px solid rgba(148,163,184,0.1)",
-              borderRadius: "16px", padding: "1.5rem",
+              borderRadius: "16px",
             }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1rem" }}>
                 <div style={{
@@ -934,14 +891,12 @@ function DashboardView({ onLogout }: { onLogout: () => void }) {
         </div>
 
         {/* Toolbar */}
-        <div style={{
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 p-4 sm:p-6 mb-6" style={{
           background: "rgba(30,41,59,0.8)", border: "1px solid rgba(148,163,184,0.1)",
-          borderRadius: "16px", padding: "1.5rem",
-          display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap",
-          marginBottom: "1.25rem",
+          borderRadius: "16px",
         }}>
           {/* Search */}
-          <div style={{ position: "relative", flex: "1 1 220px", minWidth: "200px" }}>
+          <div className="relative w-full sm:flex-1">
             <Search size={15} style={{ position: "absolute", left: "0.875rem", top: "50%", transform: "translateY(-50%)", color: "#64748B", pointerEvents: "none" }} />
             <input
               type="text"
@@ -958,8 +913,7 @@ function DashboardView({ onLogout }: { onLogout: () => void }) {
           </div>
 
           {/* Add Button */}
-          <button onClick={() => setAddingProduct(true)} style={{
-            display: "flex", alignItems: "center", gap: "0.5rem",
+          <button onClick={() => setAddingProduct(true)} className="w-full sm:w-auto flex items-center justify-center gap-2" style={{
             padding: "0.65rem 1.25rem", borderRadius: "10px",
             background: "linear-gradient(135deg, #F59E0B, #D97706)",
             border: "none", color: "#0F172A", fontSize: "0.85rem",
@@ -971,13 +925,13 @@ function DashboardView({ onLogout }: { onLogout: () => void }) {
         </div>
 
         {/* Category Tabs */}
-        <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", marginBottom: "1.5rem" }}>
+        <div className="flex gap-2 overflow-x-auto pb-3 mb-6 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-transparent sm:flex-wrap sm:overflow-visible sm:pb-0">
           {categoryCounts.map((cat) => (
             <button
               key={cat.slug}
               onClick={() => setActiveCategory(cat.slug)}
+              className="flex items-center gap-2 shrink-0"
               style={{
-                display: "flex", alignItems: "center", gap: "0.5rem",
                 padding: "0.5rem 1rem", borderRadius: "20px",
                 border: activeCategory === cat.slug ? "1.5px solid #F59E0B" : "1.5px solid rgba(148,163,184,0.15)",
                 background: activeCategory === cat.slug ? "rgba(245,158,11,0.12)" : "rgba(30,41,59,0.6)",
@@ -996,9 +950,8 @@ function DashboardView({ onLogout }: { onLogout: () => void }) {
         </div>
 
         {/* Product Table */}
-        <div style={{
-          background: "rgba(30,41,59,0.8)", border: "1px solid rgba(148,163,184,0.1)",
-          borderRadius: "16px", overflow: "hidden",
+        <div className="w-full overflow-x-auto rounded-2xl border border-[rgba(148,163,184,0.1)]" style={{
+          background: "rgba(30,41,59,0.8)",
         }}>
           {loading ? (
             <div style={{ padding: "4rem", textAlign: "center", color: "#64748B" }}>
@@ -1011,7 +964,7 @@ function DashboardView({ onLogout }: { onLogout: () => void }) {
               No products found
             </div>
           ) : (
-            <table style={{ width: "100%", borderCollapse: "collapse" }}>
+            <table className="w-full min-w-[800px]" style={{ borderCollapse: "collapse" }}>
               <thead>
                 <tr style={{ borderBottom: "1px solid rgba(148,163,184,0.1)" }}>
                   {["Product", "Category", "Specs", "Badge", "Actions"].map((col) => (

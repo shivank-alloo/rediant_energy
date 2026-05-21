@@ -64,23 +64,24 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
 
 export default function WhyRediant() {
   return (
-    <section className="section-white" style={{ padding: "7rem 0" }}>
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 2rem" }}>
+    <section className="section-white py-16 md:py-28">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
 
         {/* Stats Bar */}
-        <div style={{
-          display: "grid", gridTemplateColumns: "repeat(4, 1fr)",
-          border: "1px solid rgba(148,163,184,0.22)", borderRadius: "20px",
-          overflow: "hidden", marginBottom: "5rem",
-        }}>
+        <div className="grid grid-cols-2 lg:grid-cols-4 border border-[rgba(148,163,184,0.22)] rounded-[20px] overflow-hidden mb-12 lg:mb-20">
           {STATS.map((stat, i) => {
             const Icon = stat.icon;
             return (
-              <div key={stat.label} style={{
-                padding: "2.5rem 2rem",
-                borderRight: i < 3 ? "1px solid rgba(148,163,184,0.18)" : "none",
-                display: "flex", flexDirection: "column", gap: "1rem", background: "#fff",
-              }}>
+              <div 
+                key={stat.label} 
+                className={`p-6 sm:p-10 flex flex-col gap-4 bg-white border-[rgba(148,163,184,0.18)]
+                  ${i % 2 === 0 ? "border-r" : ""}
+                  ${i < 2 ? "border-b" : ""}
+                  lg:border-b-0
+                  ${i === 1 ? "lg:border-r" : ""}
+                  ${i === 2 ? "lg:border-r" : ""}
+                `}
+              >
                 <div style={{
                   width: "44px", height: "44px", borderRadius: "12px",
                   background: "#FFFBEB", border: "1px solid #FDE68A",
@@ -96,7 +97,7 @@ export default function WhyRediant() {
         </div>
 
         {/* Content Grid */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
           {/* Left */}
           <div>
             <p className="type-label" style={{ marginBottom: "1rem" }}>Why Rediant Energy</p>
@@ -135,7 +136,7 @@ export default function WhyRediant() {
           </div>
 
           {/* Right — compliance matrix */}
-          <div className="card-surface" style={{ padding: "2.25rem" }}>
+          <div className="card-surface p-6 sm:p-9">
             <p className="type-label" style={{ marginBottom: "1.5rem" }}>Quality & Compliance Matrix</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
               {[

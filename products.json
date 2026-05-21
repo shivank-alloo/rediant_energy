@@ -1,688 +1,1525 @@
 [
   {
-    "id": "chem-electrode-50",
-    "name": "Chemical Earthing Electrode",
+    "id": "gi-cable-tray",
+    "name": "GI Cable Tray",
     "category": "Earthing & Grounding",
     "categorySlug": "earthing",
-    "description": "Maintenance-free chemical earthing system with backfill compound for superior conductivity.",
-    "badge": "Best Seller",
-    "icon": "⚡",
+    "description": "Our firm is enlisted as one of the renowned names in offering high-quality Stainless GI Cable Tray . Used for cable management applications in buildings, these are manufactured by using modern machinery. To ensure high standards of quality, we follow total quality management. Due to features such as precise dimensions, fine finish, ruggedness, durability, fine finish and corrosion resistant nature, these are widely recognized in the market. Features: Simple installation Excellent load carrying capacity Durable",
     "specs": [
       {
+        "label": "Product",
+        "value": "GI Cable Tray"
+      },
+      {
         "label": "Material",
-        "value": "GI / Copper Bonded"
+        "value": "Galvanized Iron"
       },
       {
-        "label": "Diameter",
-        "value": "50mm / 75mm / 100mm"
+        "label": "Brand",
+        "value": "Rediant Energy"
       },
       {
-        "label": "Length",
-        "value": "1.5m / 2m / 3m"
-      },
-      {
-        "label": "Standard",
-        "value": "IS 3043"
-      },
-      {
-        "label": "Resistance",
-        "value": "< 1 Ohm"
-      },
-      {
-        "label": "Life Span",
-        "value": "20+ Years"
+        "label": "Origin",
+        "value": "Made in India"
       }
     ],
-    "image": "/images/earthing_electrode.png"
+    "icon": "\u26a1",
+    "image": "/images/scraped/gi-cable-tray-300x300.jpg"
   },
   {
-    "id": "pit-chamber",
-    "name": "Earthing Pit Chamber",
+    "id": "gi-channel",
+    "name": "GI Channel",
     "category": "Earthing & Grounding",
     "categorySlug": "earthing",
-    "description": "Heavy-duty CI/RCC inspection pit chambers with lockable covers for maintenance access.",
-    "icon": "🔋",
+    "description": "GI Channel is offered in heavy-duty, light-duty, and medium-duty design-based options. Made of high-strength steel, this galvanized product is used as an indispensable part of the construction job. This galvanized channel can be obtained in different thickness, length, diameter, and width-based options. Good welding attributes, compact shape, long-lasting surface finish, quick and simple installation method, and less wearing rate are some of the important factors behind its wide usage in the relevant arena. We are a successful trader and supplier of GI Channel. Features Without any compromise in the Quality and Strength of the GI channels are very economical and easy to install. Due to lower malleability, the screw retention properties of GI channel are higher than Aluminium Channels. Rust &amp; Corrosion free.",
     "specs": [
       {
+        "label": "Product",
+        "value": "GI Strip"
+      },
+      {
         "label": "Material",
-        "value": "Cast Iron / RCC"
+        "value": "Galvanized Iron"
       },
       {
-        "label": "Size",
-        "value": "300×300mm / 450×450mm"
+        "label": "Brand",
+        "value": "Rediant Energy"
       },
       {
-        "label": "Cover",
-        "value": "Lockable Lid"
-      },
-      {
-        "label": "Depth",
-        "value": "Custom"
-      },
-      {
-        "label": "Standard",
-        "value": "IS 3043"
-      },
-      {
-        "label": "Finish",
-        "value": "Hot-Dip Galvanized"
+        "label": "Origin",
+        "value": "Made in India"
       }
     ],
-    "image": "/images/earthing_electrode.png"
+    "icon": "\u26a1",
+    "image": "/images/scraped/earthing-electrode-1-300x300.jpg"
+  },
+  {
+    "id": "gi-patti",
+    "name": "GI Patti",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "With the help of our expert professional &amp; reputed vendors, we are engaged in manufacturing and exporting GI Patti . Our entire range of galvanized strips is engineered under the supervision of our expert professional using tested quality materials. Find usage in different industrial applications, these galvanized strips are extensively used in electrical and electronic industries. Prior to delivery, GI Patti is duly tested by our expert quality testers. Features: Rust resistance Fine finish High efficiency",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "GI Patti"
+      },
+      {
+        "label": "Material",
+        "value": "Galvanized Iron"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/gi-patti--300x300.jpg"
+  },
+  {
+    "id": "gi-pipe",
+    "name": "GI Pipe",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "We are involved in offering high-quality GI Pipe to our valuable customers. These products are made from high-quality components. Galvanised Iron (GI) Pipes are manufactured using mild steel strips of Low Carbon Steel Coils. The strips are passed through a series of fin rolls to give them a circular shape. The slit ends of the strips are then welded together by continuously passing high-frequency electric current across the edges. Features Higher durability and longevity. Weld consistency and integrity. Amenable to rigorous fabrication. Superior finish and anti-rust coating. Greater resistance to corrosion. Superior bendability, ease of cutting, and threading. Strict adherence to quality standards",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "GI Pipe"
+      },
+      {
+        "label": "Material",
+        "value": "Galvanized Iron"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/gi-pipe-300x300.jpg"
+  },
+  {
+    "id": "gi-pipe-with-funnel",
+    "name": "GI Pipe with Funnel",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Based upon the latest technology, we are fabricating a wide range of GI Pipe With Funnel earthing pipes with funnels that are widely used in power transmission applications. These are manufactured as per the specific needs of the clients and within the stipulated time frame. Our range of GI earthing pipes with funnels ensures safe and higher earthing provision. In addition, we offer these at the most competitive prices. Features: Long-term performance, even in adverse climatic conditions Available in various sizes and shapes to suit diverse end-use Great functional reliability in both moist and dry environments High weld consistency &amp; integrity Quality finish with anti-corrosive coating Easy cutting &amp; threading &nbsp; &nbsp;",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "GI Pipe With Funnel"
+      },
+      {
+        "label": "Material",
+        "value": "Galvanized Iron"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/gi-pipe-with-fenal-300x300.jpg"
+  },
+  {
+    "id": "gi-plate",
+    "name": "GI Plate",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "We are earnestly occupied with trading and supplying a wide show of GI Earthing Plate that is broadly utilized within different application regions. The offered earthing plate is offered in different sizes, plans, and other related details and can likewise be handcrafted according to the inclination laid by our benefactors. Additionally, the unfinished material we use to manufacture this extent is quality checked to guarantee the unrivaled nature of the final item. Features:",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "GI Plate"
+      },
+      {
+        "label": "Material",
+        "value": "Galvanized Iron"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/gi-plate-300x300.jpg"
   },
   {
     "id": "gi-strip",
-    "name": "GI Earthing Strip",
+    "name": "GI Strip",
     "category": "Earthing & Grounding",
     "categorySlug": "earthing",
-    "description": "Hot-dip galvanized earthing strip for busbars, panels, and structural earthing.",
-    "icon": "➖",
+    "description": "We are indulged in manufacturing and supplying a qualitative product of GI Earthing Strips . This earthing strip is manufactured using premium quality raw materials and sophisticated methods by our ingenious experts. Obtainable in varied lengths, colors, sizes, and finishes, the provided earthing strip is demanded among clients for its salient attributes. Moreover, this strip can be purchased at rock-bottom prices. Features: Excellent quality Resistant to heat and abrasion Superior finish Attributes: Sturdy construction Corrosion resistant Reliable Available in various specifications",
     "specs": [
+      {
+        "label": "Product",
+        "value": "GI Strip"
+      },
       {
         "label": "Material",
-        "value": "Hot-Dip Galvanized Steel"
+        "value": "Galvanized Iron"
       },
       {
-        "label": "Size",
-        "value": "25×3mm to 50×6mm"
+        "label": "Brand",
+        "value": "Rediant Energy"
       },
       {
-        "label": "Length",
-        "value": "3m / 6m Rods"
-      },
-      {
-        "label": "Standard",
-        "value": "IS 2629"
-      },
-      {
-        "label": "Coating",
-        "value": "85 microns min."
-      },
-      {
-        "label": "Application",
-        "value": "Panel / Structural"
+        "label": "Origin",
+        "value": "Made in India"
       }
     ],
-    "image": "/images/earthing_electrode.png"
+    "icon": "\u26a1",
+    "image": "/images/scraped/gi-strip--300x300.jpg"
   },
   {
-    "id": "gi-perforated-tray",
-    "name": "GI Perforated Cable Tray",
-    "category": "Cable Trays & Ladders",
-    "categorySlug": "cable-tray",
-    "description": "Heavy-gauge hot-dip galvanized perforated trays for industrial cable routing.",
-    "badge": "Best Seller",
-    "icon": "📐",
+    "id": "gi-wire",
+    "name": "GI Wire",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Catering to the needs of the clients, we offer Galvanized Iron Wire to the clients. Galvanized Wire involves the passing of wire through a zinc molten bath with a tank which results in the coating of zinc on the wire surface. This protective coating of zinc provides corrosion resistance on wire and increases the longevity of the product. Galvanized Wire is highly flexible and widely used in diverse industries. Advantages : The softness of wire and moveable The smoothness makes the appearance look better Appropriate coil formation increases productivity",
     "specs": [
+      {
+        "label": "Product",
+        "value": "GI Wire"
+      },
       {
         "label": "Material",
-        "value": "MS / GI (Hot-Dip)"
+        "value": "Galvanized Iron"
       },
       {
-        "label": "Width",
-        "value": "50mm – 600mm"
+        "label": "Brand",
+        "value": "Rediant Energy"
       },
       {
-        "label": "Thickness",
-        "value": "1.6mm / 2.0mm / 2.5mm"
-      },
-      {
-        "label": "Length",
-        "value": "2.5m"
-      },
-      {
-        "label": "Standard",
-        "value": "BS EN 61537"
-      },
-      {
-        "label": "Load",
-        "value": "Up to 75 kg/m"
+        "label": "Origin",
+        "value": "Made in India"
       }
     ],
-    "image": "/images/cable_tray.png"
+    "icon": "\u26a1",
+    "image": "/images/scraped/gi-wire-1-300x300.jpg"
   },
   {
-    "id": "gi-ladder-tray",
-    "name": "GI Ladder Cable Tray",
-    "category": "Cable Trays & Ladders",
-    "categorySlug": "cable-tray",
-    "description": "Ladder-type cable trays for large, heavy power and armoured cable installations.",
-    "icon": "🪜",
-    "specs": [
-      {
-        "label": "Material",
-        "value": "GI / Stainless Steel"
-      },
-      {
-        "label": "Width",
-        "value": "100mm – 900mm"
-      },
-      {
-        "label": "Rung Spacing",
-        "value": "150mm / 300mm"
-      },
-      {
-        "label": "Standard",
-        "value": "IEC 61537"
-      },
-      {
-        "label": "Depth",
-        "value": "50mm / 100mm"
-      },
-      {
-        "label": "Load Capacity",
-        "value": "Up to 200 kg/m"
-      }
-    ],
-    "image": "/images/cable_tray.png"
-  },
-  {
-    "id": "aluminum-tray",
-    "name": "Aluminium Cable Tray",
-    "category": "Cable Trays & Ladders",
-    "categorySlug": "cable-tray",
-    "description": "Lightweight extruded aluminium trays ideal for offshore, marine, and corrosive environments.",
-    "icon": "🔩",
-    "specs": [
-      {
-        "label": "Material",
-        "value": "6063-T5 Aluminium Alloy"
-      },
-      {
-        "label": "Width",
-        "value": "100mm – 600mm"
-      },
-      {
-        "label": "Thickness",
-        "value": "2.0mm / 2.5mm"
-      },
-      {
-        "label": "Standard",
-        "value": "BS EN 61537"
-      },
-      {
-        "label": "Weight",
-        "value": "70% Lighter than GI"
-      },
-      {
-        "label": "Corrosion",
-        "value": "Excellent Resistance"
-      }
-    ],
-    "image": "/images/cable_tray.png"
-  },
-  {
-    "id": "mono-perc-panel",
-    "name": "Mono PERC Solar Panel",
-    "category": "Solar Energy Systems",
-    "categorySlug": "solar",
-    "description": "High-efficiency monocrystalline PERC panels for commercial and industrial rooftop installations.",
-    "badge": "",
-    "icon": "☀️",
-    "specs": [
-      {
-        "label": "Wattage",
-        "value": "350W – 540W"
-      },
-      {
-        "label": "Efficiency",
-        "value": "Up to 21.5%"
-      },
-      {
-        "label": "Cell Type",
-        "value": "Mono PERC Half-Cell"
-      },
-      {
-        "label": "Dimensions",
-        "value": "1756×1056×35mm"
-      },
-      {
-        "label": "Standard",
-        "value": "IEC 61215 / IEC 61730"
-      },
-      {
-        "label": "Warranty",
-        "value": "25 Years Performance"
-      }
-    ],
-    "image": "/images/solar_panel.png"
-  },
-  {
-    "id": "on-grid-inverter",
-    "name": "On-Grid Solar Inverter",
-    "category": "Solar Energy Systems",
-    "categorySlug": "solar",
-    "description": "String inverters with MPPT tracking and remote monitoring for grid-tied systems.",
-    "icon": "⚙️",
-    "specs": [
-      {
-        "label": "Capacity",
-        "value": "5kW – 100kW"
-      },
-      {
-        "label": "MPPT",
-        "value": "2 – 6 Trackers"
-      },
-      {
-        "label": "Efficiency",
-        "value": "98.4% max."
-      },
-      {
-        "label": "Standard",
-        "value": "IEC 62109"
-      },
-      {
-        "label": "Grid",
-        "value": "3-Phase / Single Phase"
-      },
-      {
-        "label": "Monitoring",
-        "value": "Wi-Fi / RS485"
-      }
-    ],
-    "image": "/images/solar_panel.png"
-  },
-  {
-    "id": "solar-mounting",
-    "name": "Solar Mounting Structure",
-    "category": "Solar Energy Systems",
-    "categorySlug": "solar",
-    "description": "Hot-dip galvanized steel mounting structures for flat rooftop and ground-mounted systems.",
-    "icon": "🏗️",
-    "specs": [
-      {
-        "label": "Material",
-        "value": "GI Steel / Aluminium"
-      },
-      {
-        "label": "Tilt Angle",
-        "value": "10° – 30° (Adjustable)"
-      },
-      {
-        "label": "Load",
-        "value": "Wind: 150 km/h"
-      },
-      {
-        "label": "Standard",
-        "value": "IS 875 Part 3"
-      },
-      {
-        "label": "Coating",
-        "value": "85 microns HDG"
-      },
-      {
-        "label": "Life",
-        "value": "25 Years"
-      }
-    ],
-    "image": "/images/solar_panel.png"
-  },
-  {
-    "id": "led-street-light-100w",
-    "name": "LED Street Light 100W",
+    "id": "led-bulb-5w",
+    "name": "LED Bulb 5W",
     "category": "Industrial LED Lighting",
     "categorySlug": "led",
-    "description": "High-lumen LED street lights with photocell control for roads, highways, and industrial areas.",
-    "badge": "",
-    "icon": "💡",
+    "description": "For our esteemed clients, we are engaged in offering an innovative range of LED Bulb. Features: Precisely engineered High performance Perfect illumination",
     "specs": [
       {
+        "label": "Product",
+        "value": "LED Bulb"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Shape",
+        "value": "Round"
+      },
+      {
         "label": "Wattage",
-        "value": "100W (±5%)"
+        "value": "5"
       },
       {
-        "label": "Lumens",
-        "value": "12,000 lm"
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/1-1-300x300.jpg"
+  },
+  {
+    "id": "led-bulb-7w",
+    "name": "LED Bulb 7W",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "For our esteemed clients, we are engaged in offering an innovative range of LED Bulb. Features: Precisely engineered High performance Perfect illumination",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "LED Bulb"
       },
       {
-        "label": "CCT",
-        "value": "5000K / 6000K"
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Shape",
+        "value": "Round"
+      },
+      {
+        "label": "Wattage",
+        "value": "7"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/2-1-300x300.jpg"
+  },
+  {
+    "id": "led-bulb-9w",
+    "name": "LED Bulb 9W",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "For our esteemed clients, we are engaged in offering an innovative range of LED Bulb. Features: Precisely engineered High performance Perfect illumination",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "LED Bulb"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Shape",
+        "value": "Round"
+      },
+      {
+        "label": "Wattage",
+        "value": "9"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/3-1-300x300.jpg"
+  },
+  {
+    "id": "led-street-light-120w",
+    "name": "LED Street Light 120W",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Our company has established itself as a leading name of superior quality Outdoor Street Light in the market at the present scenario. These products from our side impart an amazing and well-direct light. It is a fascinating game of refined and roundish shapes, lines and curves, lights and shadows, a great harmony conveying a feeling of strength and impressiveness. Features: \u2022 Better illumination \u2022 High grade material \u2022 Quality Product \u2022 Life \u2013 50,000 Hours \u2022 Efficacy (Lm/W) \u2013 120",
+    "specs": [
+      {
+        "label": "Input Voltage",
+        "value": "110V to 240V AC"
+      },
+      {
+        "label": "Power",
+        "value": "120W"
+      },
+      {
+        "label": "Usage/Application",
+        "value": "Road Light, Outdoor Light"
+      },
+      {
+        "label": "Lighting Color",
+        "value": "Cool White, Pure White"
+      },
+      {
+        "label": "Body Material",
+        "value": "Aluminum"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP65"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/led-street-light-120w-300x300.jpg"
+  },
+  {
+    "id": "led-street-light-150w",
+    "name": "LED Street Light 150W",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "",
+    "specs": [
+      {
+        "label": "Usage/Application",
+        "value": "Road Light"
+      },
+      {
+        "label": "Brand",
+        "value": "Aster LED"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Input Voltage",
+        "value": "110V to 240VAC"
+      },
+      {
+        "label": "Certification",
+        "value": "CE"
+      },
+      {
+        "label": "Body Material",
+        "value": "Aluminium Die Cast"
       },
       {
         "label": "IP Rating",
         "value": "IP66"
       },
       {
-        "label": "CRI",
-        "value": "> 80"
-      },
-      {
-        "label": "Life Span",
-        "value": "50,000 Hours"
+        "label": "Lumens",
+        "value": "150 Lm/W"
       }
     ],
-    "image": "/images/led_light.png"
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/led-street-light-150w-300x300.jpg"
   },
   {
-    "id": "led-highbay-200w",
-    "name": "LED High Bay Light 200W",
+    "id": "led-street-light-200w",
+    "name": "LED Street Light 200W",
     "category": "Industrial LED Lighting",
     "categorySlug": "led",
-    "description": "Industrial high-bay LED fittings for warehouses, factories, and sports facilities.",
-    "icon": "🔦",
+    "description": "Our company has established itself as a leading name of superior quality Outdoor Street Light in the market at the present scenario. These products from our side impart an amazing and well-direct light. It is a fascinating game of refined and roundish shapes, lines and curves, lights and shadows, a great harmony conveying a feeling of strength and impressiveness. Features Quality Product Life - 50,000 Hours Efficacy (Lm/W) - 120 THD 85, Power Factor &gt; 0.98",
     "specs": [
       {
-        "label": "Wattage",
+        "label": "Input Voltage",
+        "value": "110V TO 230V AC"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP66"
+      },
+      {
+        "label": "Power",
         "value": "200W"
       },
       {
-        "label": "Lumens",
-        "value": "24,000 lm"
+        "label": "Lighting Color",
+        "value": "Pure White"
       },
       {
-        "label": "CCT",
-        "value": "4000K / 5000K / 6500K"
+        "label": "Usage/Application",
+        "value": "Outdoor Lights, Road Lights"
+      },
+      {
+        "label": "Certification",
+        "value": "ISI"
+      },
+      {
+        "label": "Sensor",
+        "value": "No"
+      },
+      {
+        "label": "Luminous Flux",
+        "value": "200 Lm/W"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/led-street-light-200w-300x300.jpg"
+  },
+  {
+    "id": "led-street-light-90w",
+    "name": "LED Street Light 90W",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Our company has established itself as a leading name of superior quality Outdoor Street Light in the market at the present scenario. These products from our side impart an amazing and well-direct light. It is a fascinating game of refined and roundish shapes, lines and curves, lights and shadows, a great harmony conveying a feeling of strength and impressiveness. Features: Life \u2013 50,000 Hours Efficacy (Lm/W) \u2013 120 THD &lt;15, CRI &gt;85, Power Factor &gt; 0.98 Efficient Light Distribution Perfect Luminance and Brightness",
+    "specs": [
+      {
+        "label": "Usage/Application",
+        "value": "Outdoor"
+      },
+      {
+        "label": "Input Voltage",
+        "value": "110 to 285 V AC"
       },
       {
         "label": "IP Rating",
         "value": "IP65"
       },
       {
-        "label": "Mounting",
-        "value": "Hook / Direct"
+        "label": "Brand",
+        "value": "Rediant Energy"
       },
       {
-        "label": "Beam Angle",
-        "value": "90° / 120°"
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Power W",
+        "value": "15W tO 150W"
+      },
+      {
+        "label": "Lighting Color",
+        "value": "Pure White"
       }
     ],
-    "image": "/images/led_light.png"
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/led-street-light-90w-300x300.jpg"
   },
   {
-    "id": "led-panel-light",
-    "name": "LED Panel Light 40W",
+    "id": "led-street-light-compaq-30w",
+    "name": "LED Street Light Compaq 30W",
     "category": "Industrial LED Lighting",
     "categorySlug": "led",
-    "description": "Ultra-slim LED panel lights for commercial offices, hospitals, and clean rooms.",
-    "icon": "🟦",
+    "description": "",
     "specs": [
       {
-        "label": "Wattage",
-        "value": "40W"
+        "label": "Usage/Application",
+        "value": "Road Light, Society Light"
       },
       {
-        "label": "Size",
-        "value": "600×600mm / 1200×300mm"
+        "label": "IP Rating",
+        "value": "IP65"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Input Voltage",
+        "value": "110V to 240V AC"
+      },
+      {
+        "label": "Body Material",
+        "value": "Aluminium Die Cast"
+      },
+      {
+        "label": "Certification",
+        "value": "ISO 90012015 Certified Company, RoHS, CE"
+      },
+      {
+        "label": "Lighting Color",
+        "value": "Pure White, Cool White"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/led-street-light-30w-300x300.jpg"
+  },
+  {
+    "id": "lens-street-light",
+    "name": "Lens Street Light",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Our company has established itself as a leading name of superior quality Outdoor Street Light in the market at the present scenario. These products from our side impart an amazing and well-direct light. It is a fascinating game of refined and roundish shapes, lines and curves, lights and shadows, a great harmony conveying a feeling of strength and impressiveness. Features Better illumination High-grade material Quality Product Life - 50,000 Hours Efficacy (Lm/W) - 120 THD 85, Power Factor &gt; 0.98",
+    "specs": [
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Certification",
+        "value": "CE, RoHS"
+      },
+      {
+        "label": "Body Material",
+        "value": "Aluminium Die Cast"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP65"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/lens-street-light-300x300.jpg"
+  },
+  {
+    "id": "24v-ac-led-flood-light",
+    "name": "24V AC LED Flood Light",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Getting huge appreciation in the market for supplying the best quality 24V AC LED lights. Get more for your money with our range of high-quality 24 Volt LED Lights. The ultra-bright LEDs provide maximum brightness while still minimizing energy consumptions. The attractive design makes them ideal for use in gardens and business property. There are different wattages available that offer a range with a cool white color temperature to provide a clean and bright light. Features: Better illumination High grade material Quality Product Life - 50,000 Hours Efficacy (Lm/W) - 120 THD &lt;15, CRI &gt;85, Power Factor &gt; 0.98 Constant Current drive, Low Current Fluctuation Efficient Light Distribution Perfect Luminance and Brightness",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "24 AC LED Flood Light"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/24v-ac-led-flood-light-300x300.jpg"
+  },
+  {
+    "id": "led-flood-light",
+    "name": "LED Flood Light",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Leveraging the skills of our qualified team of professionals, Our Company has achieved widespread recognition in providing LED Flood Light . These LED Flood Lights have low electricity consumption and have sturdy construction. Features: Better illumination High grade material Quality Product Life - 50,000 Hours Efficacy (Lm/W) - 120 THD &lt;15, CRI &gt;85, Power Factor &gt; 0.98 Constant Current drive, Low Current Fluctuation Efficient Light Distribution Perfect Luminance and Brightness",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "LED Flood Light"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/led-flood-light-300x300.jpg"
+  },
+  {
+    "id": "lumena-flood-light",
+    "name": "Lumena Flood Light",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Leveraging the skills of our qualified team of professionals, Our Company has achieved widespread recognition in providing Lumena Flood Light. These Lumena LED Flood Lights have low electricity consumption and have sturdy construction. Features: Better illumination High grade material Quality Product Life 50,000 Hours Efficacy (Lm/W) 120 THD &lt;15, CRI &gt;85, Power Factor &gt; 0.98 Constant Current drive, Low Current Fluctuation Efficient Light Distribution Perfect Luminance and Brightness",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Lumena Flood Light"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/lumena-flood-light-1-300x300.jpg"
+  },
+  {
+    "id": "slim-flood-light",
+    "name": "Slim Flood Light",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Leveraging the skills of our qualified team of professionals, Our Company has achieved widespread recognition in providing Slim Flood Light . These Slim Led Flood Lights have low electricity consumption and have sturdy construction. Features: Better illumination High grade material Quality Product Life \u2013 50,000 Hours Efficacy (Lm/W) \u2013 120 THD 85, Power Factor &gt; 0.98 Constant Current drive, Low Current Fluctuation Efficient Light Distribution Perfect Luminance and Brightness",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Slim Flood Light"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/slim-flood-light-300x300.jpg"
+  },
+  {
+    "id": "copper-wire",
+    "name": "Copper Wire",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Product Copper Wire Material Copper Brand Rediant Energy Origin Made in India We are engaged in manufacturing these copper wires of the finest quality with a team of trained and qualified professionals. It is highly ductile which means it can be pulled and extended into wires. Copper Wire is widely used in many things like machinery, plumbing, electrical appliances, electric wires, etc. We are using high-grade material which is been sourced from the selective vendors in the market. Features Made with the free metallic surface without any type of organic carbon These are made with the excellent material quality Highly flexible to enable the easy installations Narrow tolerances for wire diameter Resistant to hydrogen embrittlement",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Copper Wire"
+      },
+      {
+        "label": "Material",
+        "value": "Copper"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/copper-wire-1.jpg"
+  },
+  {
+    "id": "copper-strip",
+    "name": "Copper Strip",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Our unmatched range of Copper Strip is resistant to corrosion. These strips are used in automatic machines to enhance production and also reduce wastage. These Copper strips are used as raw material in different machines and preferred in areas where salt content in soil is very high. Salient features: Dimensional control Precision engineering Longer service life Crack-free bends Applications: Electrical Conductors Switch Terminals Electrical Circuits Electrical Contacts",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Copper Wire"
+      },
+      {
+        "label": "Material",
+        "value": "Copper"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/copper-strip-1.jpg"
+  },
+  {
+    "id": "chamber-cover",
+    "name": "Chamber Cover",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Product Chamber Cover Brand Rediant Energy Origin Made in India To furnish the diverse requirements of our clients we are involved in offering a wide range of Chamber Cover . These find their wide applications in residential areas, footpaths, street lanes, heavy traffic roads, and many more places. These are manufactured using premium quality materials and components to render maximum client satisfaction. We also assure timely delivery of our products. Features: Premium quality Long life Quality approved",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "GI Cable Tray"
+      },
+      {
+        "label": "Material",
+        "value": "Galvanized Iron"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/chamber-cover.jpg"
+  },
+  {
+    "id": "lightning-arrester",
+    "name": "Lightning Arrester",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/lightning-arrestor-1.png"
+  },
+  {
+    "id": "ms-cover",
+    "name": "MS Cover",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/ms-cover.png"
+  },
+  {
+    "id": "earth-pit-cover",
+    "name": "Earth Pit Cover",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Product Earth Pit Cover Brand Rediant Energy Origin Made in India Earth Pit Cover is manufactured with the use of quality material that is reliable to use. They are used in order to secure Protection for all earthing terminations. They are very light weighted and have concrete earth pits. They ensure easy access to routine testing of electrical earth. They provide secure and user-friendly accesses. Features: Light-weighted Maximum safe working load Easy to install",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "GI Cable Tray"
+      },
+      {
+        "label": "Material",
+        "value": "Galvanized Iron"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/earthpit-cover.jpg"
+  },
+  {
+    "id": "earthing-electrode",
+    "name": "Earthing Electrode",
+    "category": "Earthing & Grounding",
+    "categorySlug": "earthing",
+    "description": "Product Earthing Electrode Brand Rediant Energy Origin Made in India We are one of the prominent suppliers, traders, and exporters of optimum quality Earthing Electrode , which is widely used in different industrial, households, and commercial establishments for earthing applications. At the vendors\u2019 end, offered systems are manufactured from high-grade materials in compliance with the industry set standards. Offered systems are available with us at market-leading prices. Features: Easy installation High performance Enhanced serving lifer",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "GI Cable Tray"
+      },
+      {
+        "label": "Material",
+        "value": "Galvanized Iron"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u26a1",
+    "image": "/images/scraped/earthing-electrode.jpg"
+  },
+  {
+    "id": "well-glass-light",
+    "name": "Well Glass Light",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Product Well Glass Light Lighting Type LED Brand Rediant Energy Origin Made in India Leveraging the skills of our qualified team of professionals, Our Company has achieved widespread recognition in providing LED Well Glass Light . These LED LIGHTS have low electricity consumption and have sturdy construction. Features Better illumination High-grade material Quality Product Life &#8211; 50,000 Hours Efficacy (Lm/W) &#8211; 120 THD &lt;15, CRI &gt;85, Power Factor &gt; 0.98 Constant Current drive, Low Current Fluctuation Efficient Light Distribution Perfect Luminance and Brightness",
+    "specs": [
+      {
+        "label": "Usage/Application",
+        "value": "Road Light"
+      },
+      {
+        "label": "Brand",
+        "value": "Aster LED"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Input Voltage",
+        "value": "110V to 240VAC"
+      },
+      {
+        "label": "Certification",
+        "value": "CE"
+      },
+      {
+        "label": "Body Material",
+        "value": "Aluminium Die Cast"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP66"
       },
       {
         "label": "Lumens",
-        "value": "4,400 lm"
+        "value": "150 Lm/W"
+      }
+    ],
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/well-glass-light.jpg"
+  },
+  {
+    "id": "led-highbay-light",
+    "name": "LED Highbay Light",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Product LED High Bay Light Lighting Type LED Brand Rediant Energy Origin Made in India Getting huge appreciation in the market for supplying the best quality LED High Bay Light . Our products are quality assured and supplied at the best market price. Our provided High Bay light is checked on various parameters of quality for supplying a defect-free range. Features: Better illumination High grade material Quality Product Life \u2013 50,000 Hours Efficacy (Lm/W) \u2013 120 THD &lt;15, CRI &gt;85, Power Factor &gt; 0.98 Constant Current drive, Low Current Fluctuation Efficient Light Distribution Perfect Luminance and Brightness",
+    "specs": [
+      {
+        "label": "Usage/Application",
+        "value": "Outdoor"
       },
       {
-        "label": "CCT",
-        "value": "3000K / 4000K / 6500K"
+        "label": "Input Voltage",
+        "value": "110 to 285 V AC"
       },
       {
         "label": "IP Rating",
-        "value": "IP40"
+        "value": "IP65"
       },
       {
-        "label": "Driver",
-        "value": "Integrated Flicker-Free"
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Lighting Type",
+        "value": "LED"
+      },
+      {
+        "label": "Power W",
+        "value": "15W tO 150W"
+      },
+      {
+        "label": "Lighting Color",
+        "value": "Pure White"
       }
     ],
-    "image": "/images/led_light.png"
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/led-high-bay-light.jpg"
   },
   {
-    "id": "fr-pvc-wire",
-    "name": "FR PVC Copper Wire",
-    "category": "Wires & Armoured Cables",
-    "categorySlug": "cables",
-    "description": "Flame retardant PVC insulated copper conductor wires for industrial and household wiring.",
-    "badge": "ISO Certified",
-    "icon": "🔌",
+    "id": "led-high-bay-dom-light",
+    "name": "LED High Bay Dom Light",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Product LED High Bay Dom Light Lighting Type LED Brand Rediant Energy Origin Made in India Getting huge appreciation in the market for supplying best quality LED High Bay Dom Light . Our products are quality assured and supplied at the best market price. Our provided High Bay light is checked on various parameters of quality for supplying a defect-free range.",
     "specs": [
       {
-        "label": "Conductor",
-        "value": "Annealed Copper"
+        "label": "Usage/Application",
+        "value": "Road Light"
       },
       {
-        "label": "Size",
-        "value": "1.5mm² – 16mm²"
+        "label": "Brand",
+        "value": "Aster LED"
       },
       {
-        "label": "Insulation",
-        "value": "FR PVC"
+        "label": "Lighting Type",
+        "value": "LED"
       },
       {
-        "label": "Standard",
-        "value": "IS 694"
+        "label": "Input Voltage",
+        "value": "110V to 240VAC"
       },
       {
-        "label": "Voltage",
-        "value": "1100V"
+        "label": "Certification",
+        "value": "CE"
       },
       {
-        "label": "Temperature",
-        "value": "-20°C to +70°C"
+        "label": "Body Material",
+        "value": "Aluminium Die Cast"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP66"
+      },
+      {
+        "label": "Lumens",
+        "value": "150 Lm/W"
       }
     ],
-    "image": "/images/armoured_cable.png"
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/led-high-bay-bom-dom-light-.jpg"
   },
   {
-    "id": "armoured-cable",
-    "name": "Armoured SWA Power Cable",
-    "category": "Wires & Armoured Cables",
-    "categorySlug": "cables",
-    "description": "Steel wire armoured XLPE insulated power cables for heavy industrial and underground installations.",
-    "icon": "🧶",
+    "id": "24v-hand-lamp",
+    "name": "24V Hand Lamp",
+    "category": "Industrial LED Lighting",
+    "categorySlug": "led",
+    "description": "Product 24V Hand Lamp Lighting Type LED Brand Rediant Energy Origin Made in India Getting huge appreciation in the market for supplying best quality 24V Hand Lamp AC / DC LED lights. Get more for your money with our range of high-quality 24 Volt LED Lights. The ultra-bright LEDs provide maximum brightness while still minimizing energy consumptions. The attractive design makes them ideal for use in gardens and business property. There are different wattages available that offer a range with a cool white color temperature to provide a clean and bright light. Features: Better illumination High grade material Quality Product Life \u2013 50,000 Hours Efficacy (Lm/W) \u2013 120 THD &lt;15, CRI &gt;85, Power Factor &gt; 0.98 Constant Current drive, Low Current Fluctuation Efficient Light Distribution Perfect Luminance and Brightness",
     "specs": [
       {
-        "label": "Conductor",
-        "value": "Stranded Copper / Aluminium"
+        "label": "Usage/Application",
+        "value": "Road Light"
       },
       {
-        "label": "Size",
-        "value": "2.5mm² – 300mm²"
+        "label": "Brand",
+        "value": "Aster LED"
       },
       {
-        "label": "Insulation",
-        "value": "XLPE"
+        "label": "Lighting Type",
+        "value": "LED"
       },
       {
-        "label": "Armour",
-        "value": "SWA (Steel Wire)"
+        "label": "Input Voltage",
+        "value": "110V to 240VAC"
       },
       {
-        "label": "Standard",
-        "value": "IS 7098 / IEC 60502"
+        "label": "Certification",
+        "value": "CE"
       },
       {
-        "label": "Voltage",
-        "value": "1.1kV / 3.3kV / 11kV"
+        "label": "Body Material",
+        "value": "Aluminium Die Cast"
+      },
+      {
+        "label": "IP Rating",
+        "value": "IP66"
+      },
+      {
+        "label": "Lumens",
+        "value": "150 Lm/W"
       }
     ],
-    "image": "/images/armoured_cable.png"
+    "icon": "\ud83d\udca1",
+    "image": "/images/scraped/24ac-hand-lamp.jpg"
   },
   {
-    "id": "flexible-cable",
-    "name": "Industrial Flexible Cable",
-    "category": "Wires & Armoured Cables",
-    "categorySlug": "cables",
-    "description": "Multi-core flexible cables for motor connections, machinery, and control panels.",
-    "icon": "〰️",
+    "id": "research-amp-development",
+    "name": "Research &amp; Development",
+    "category": "Cable Trays & Ladders",
+    "categorySlug": "cable-tray",
+    "description": "",
     "specs": [
       {
-        "label": "Core",
-        "value": "2C / 3C / 4C / 5C"
+        "label": "Brand",
+        "value": "Rediant Energy"
       },
       {
-        "label": "Size",
-        "value": "1.5mm² – 35mm²"
-      },
-      {
-        "label": "Insulation",
-        "value": "PVC / XLPE"
-      },
-      {
-        "label": "Standard",
-        "value": "IS 9968 / IEC 60245"
-      },
-      {
-        "label": "Voltage",
-        "value": "1100V"
-      },
-      {
-        "label": "Flex Rating",
-        "value": "Class 5 Flex"
+        "label": "Origin",
+        "value": "Made in India"
       }
     ],
-    "image": "/images/armoured_cable.png"
+    "icon": "\ud83d\udcd0",
+    "image": "/images/scraped/research-development-200x200.jpg"
   },
   {
-    "id": "brass-cable-gland-a1",
-    "name": "Brass Cable Gland Type A1",
-    "category": "Cable Glands & Junction Boxes",
+    "id": "single-rail-cable-tray",
+    "name": "Single Rail Cable Tray",
+    "category": "Cable Trays & Ladders",
+    "categorySlug": "cable-tray",
+    "description": "Product Single Rail Cable Tray Brand Rediant Energy Origin Made in India We offer a Single Rail Cable Tray for any of the electrical applications. It provides an effective and reliable power distribution because of the convenient cable enclosure. Characteristics: These aluminum systems are the fastest systems to install and provide the maximum freedom for cable to enter and exit the system. Single-hung or wall-mounted systems in single or multiple tiers. Solid side rail protection and system strength with smooth radius fittings. Maximum strength for long-span applications.",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Single Rail Cable Tray"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udcd0",
+    "image": "/images/scraped/1-2.jpg"
+  },
+  {
+    "id": "channel-cable-tray",
+    "name": "Channel Cable Tray",
+    "category": "Cable Trays & Ladders",
+    "categorySlug": "cable-tray",
+    "description": "Product Channel Cable Tray Brand Rediant Energy Origin Made in India We &#8220;Rediant Energy&#8221; are regular manufacturers and suppliers of Channel Cable Tray . Perforated cable trays with channel support offer an effective way to manage wiring while keeping it accessible, organized, and secure. These cable trays are designed keeping in mind the exact requirements of the customers and are highly appreciated for their robustness. Furthermore, the channel perforated cable trays are highly appreciated as these ensure regular airflow which results in natural cooling of the cables. Features Ideal for smaller, lightweight runs (branch circuits off of larger cable tray runs, instrumentation, communication) Optional ventilated bottom hole pattern provides holes for cable drop-outs and cable ties Large Cabling fill area free of sharp edges Vented &amp; Non-Ventilated systems include Fittings and Accessories",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Channel Cable Tray"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udcd0",
+    "image": "/images/scraped/2-2.jpg"
+  },
+  {
+    "id": "solid-bottom-cable-tray",
+    "name": "Solid Bottom Cable Tray",
+    "category": "Cable Trays & Ladders",
+    "categorySlug": "cable-tray",
+    "description": "Product Solid Bottom Cable Tray Brand Rediant Energy Origin Made in India Given our immense industry experience and expertise, we are offering Solid Bottom Cable Tray to our customers. These are highly useful for applications where the cables are able to generate heat. The instances being electrical and telecommunication. These products are known for offering complete protection to cables. These products are acclaimed for their excellent quality and durability. We are offering these at a reasonable price. Features Aluminum and steel construction offers high loading capacities in a lightweight, easy to install design. A full line of accessories, covers, and radius fittings are available. The solid bottom design is ideal for schools, hospitals and retail environments.",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Solid Bottom Cable Tray"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udcd0",
+    "image": "/images/scraped/3-2.jpg"
+  },
+  {
+    "id": "ladder-cable-tray",
+    "name": "Ladder Cable Tray",
+    "category": "Cable Trays & Ladders",
+    "categorySlug": "cable-tray",
+    "description": "Product Ladder Cable Tray Brand Rediant Energy Origin Made in India We manufacture verified range Ladder Cable Tray . These cable trays are fabricated from high-quality hot-dip galvanizing that makes them anti-corrosive. These cable trays are integrated with cable support systems that can withstand dynamic load and are also provided with suitable couplers, clamps, brackets, and fasteners for proper and efficient installation. Features: Manufactured using high-grade raw materials Industrial Grade Strength Highly Durable Robust Design Easy to Install Available for Light Duty, Medium Duty, Heavy Duty Applications Wide range of Ladder Cable Tray Accessories, Covers &amp; Fixings to choose from Excellent on-site integration &amp; safety",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Ladder Cable Tray"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udcd0",
+    "image": "/images/scraped/4-1.jpg"
+  },
+  {
+    "id": "wire-mesh-cable-tray",
+    "name": "Wire Mesh Cable Tray",
+    "category": "Cable Trays & Ladders",
+    "categorySlug": "cable-tray",
+    "description": "Product Wire Mesh Cable Tray Brand Rediant Energy Origin Made in India Our company is a renowned provider for Wire Mesh Cable Tray to our valued customers. Made out of excellent quality raw material, this product is in extensive demand amongst our valued customers for its excellent quality and availability in different grades. Offered Wire Mesh Cable Trays are approved on various parameters of quality and are widely demanded in industrial and commercial areas for their salient attributes that make them unique in the range.",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Wire Mesh Cable Tray"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udcd0",
+    "image": "/images/scraped/cable-trays.jpg"
+  },
+  {
+    "id": "havells",
+    "name": "Havells",
+    "category": "Wires & Cables",
+    "categorySlug": "cables",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udd0c",
+    "image": "/images/scraped/havells.jpg"
+  },
+  {
+    "id": "pollycab",
+    "name": "Polycab",
+    "category": "Wires & Cables",
+    "categorySlug": "cables",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udd0c",
+    "image": "/images/scraped/pollycab-2.jpg"
+  },
+  {
+    "id": "finolex",
+    "name": "Finolex",
+    "category": "Wires & Cables",
+    "categorySlug": "cables",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udd0c",
+    "image": "/images/scraped/finolex.jpg"
+  },
+  {
+    "id": "rr-kabel",
+    "name": "RR Kabel",
+    "category": "Wires & Cables",
+    "categorySlug": "cables",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udd0c",
+    "image": "/images/scraped/rr-kabel.jpg"
+  },
+  {
+    "id": "rediant-energy-services",
+    "name": "REDIANT ENERGY SERVICES",
+    "category": "Wires & Cables",
+    "categorySlug": "cables",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udd0c",
+    "image": "/images/scraped/kei-1.jpg"
+  },
+  {
+    "id": "solar-panels",
+    "name": "Solar Panels",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u2600\ufe0f",
+    "image": "/images/scraped/solar-panels-2.jpg"
+  },
+  {
+    "id": "solar-panel-stand",
+    "name": "Solar Panel Stand",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u2600\ufe0f",
+    "image": "/images/scraped/solar-panel-stands.jpg"
+  },
+  {
+    "id": "lithium-batteries",
+    "name": "Lithium Batteries",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u2600\ufe0f",
+    "image": "/images/scraped/lithium-batteries-300x300.jpg"
+  },
+  {
+    "id": "charge-controllers",
+    "name": "Charge Controllers",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u2600\ufe0f",
+    "image": "/images/scraped/charge-controllers.jpg"
+  },
+  {
+    "id": "solar-wires",
+    "name": "Solar Wires",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u2600\ufe0f",
+    "image": "/images/scraped/solar-wires-300x300.jpg"
+  },
+  {
+    "id": "solar-lights",
+    "name": "Solar Lights",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u2600\ufe0f",
+    "image": "/images/scraped/solar-lights-300x300.jpg"
+  },
+  {
+    "id": "solar-inverters",
+    "name": "Solar Inverters",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u2600\ufe0f",
+    "image": "/images/scraped/solar-inverters-300x300.jpg"
+  },
+  {
+    "id": "rediant-energy-services-1",
+    "name": "REDIANT ENERGY SERVICES",
+    "category": "Solar Energy Systems",
+    "categorySlug": "solar",
+    "description": "",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\u2600\ufe0f",
+    "image": "/images/scraped/solar-batteries-300x300.jpg"
+  },
+  {
+    "id": "research-amp-development-1",
+    "name": "Research &amp; Development",
+    "category": "Cable Glands & Boxes",
     "categorySlug": "cable-gland",
-    "description": "Type A1 brass cable glands for single-core and plastic sheathed cables without armour.",
-    "badge": "Best Seller",
-    "icon": "🔩",
+    "description": "",
     "specs": [
       {
-        "label": "Material",
-        "value": "Brass (60/40)"
+        "label": "Brand",
+        "value": "Rediant Energy"
       },
       {
-        "label": "Size",
-        "value": "PG7 – PG48 / M16 – M63"
-      },
-      {
-        "label": "IP Rating",
-        "value": "IP65 / IP68"
-      },
-      {
-        "label": "Standard",
-        "value": "BS 6121 / IS 12943"
-      },
-      {
-        "label": "Finish",
-        "value": "Natural / Nickel Plated"
-      },
-      {
-        "label": "Armour",
-        "value": "Unarmoured Only"
+        "label": "Origin",
+        "value": "Made in India"
       }
     ],
-    "image": "/images/cable_gland.png"
+    "icon": "\ud83d\udd29",
+    "image": "/images/scraped/research-development-1-200x200.jpg"
   },
   {
-    "id": "brass-cable-gland-a2",
-    "name": "Brass Cable Gland Type A2",
-    "category": "Cable Glands & Junction Boxes",
+    "id": "braco-cable-gland",
+    "name": "Braco Cable Gland",
+    "category": "Cable Glands & Boxes",
     "categorySlug": "cable-gland",
-    "description": "Type A2 brass glands for SWA and armoured cables with earth continuity.",
-    "icon": "⚙️",
+    "description": "Product Braco Cable Gland Brand Rediant Energy Origin Made in India With our sustained efforts and dedication, we are counted among the best name in rendering Braco Cable Gland . They are strong and robust in the finish. Braco single compression Brass Cable Glands are suitable for armored/unarmoured cables. These are manufactured out of brass castings and are machined accurately to the required sizes These glands are nickel plated to avoid corrosion while storage and use. Features: Precisely designed Easy installation Efficient functionality Crack free High durability Many sizes available Perfect grip &nbsp;",
     "specs": [
       {
-        "label": "Material",
-        "value": "Brass (60/40)"
+        "label": "Product",
+        "value": "Braco Cable Gland"
       },
       {
-        "label": "Size",
-        "value": "M20 – M75"
+        "label": "Brand",
+        "value": "Rediant Energy"
       },
       {
-        "label": "IP Rating",
-        "value": "IP66 / IP68"
-      },
-      {
-        "label": "Standard",
-        "value": "BS 6121 Part 1"
-      },
-      {
-        "label": "Finish",
-        "value": "Nickel Plated"
-      },
-      {
-        "label": "Armour",
-        "value": "SWA / STA Armoured"
+        "label": "Origin",
+        "value": "Made in India"
       }
     ],
-    "image": "/images/cable_gland.png"
+    "icon": "\ud83d\udd29",
+    "image": "/images/scraped/1-3.jpg"
+  },
+  {
+    "id": "brass-cable-gland",
+    "name": "Brass Cable Gland",
+    "category": "Cable Glands & Boxes",
+    "categorySlug": "cable-gland",
+    "description": "Product Brass Cable Gland Brand Rediant Energy Origin Made in India Being a reputed name in the industry, we are engaged in offering a qualitative range of Brass Cable Gland . The offered range of brass cable glands is manufactured employing high-quality raw material and the latest technology. Apart from this, we customize these alco-type cable glands as per the specifications detailed by the customers. Features: Used with SWA, plastic and rubber sheathed cables Used indoor conditions inner ring frames positive armor clamp",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Brass Cable Gland"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udd29",
+    "image": "/images/scraped/2-4.jpg"
   },
   {
     "id": "nylon-cable-gland",
-    "name": "Nylon PG Cable Gland",
-    "category": "Cable Glands & Junction Boxes",
-    "categorySlug": "cable-gland",
-    "description": "PA66 nylon glands with excellent chemical resistance for light industrial and enclosure use.",
-    "icon": "🔵",
-    "specs": [
-      {
-        "label": "Material",
-        "value": "Polyamide PA66 (Nylon)"
-      },
-      {
-        "label": "Size",
-        "value": "PG7 – PG42 / M12 – M50"
-      },
-      {
-        "label": "IP Rating",
-        "value": "IP68"
-      },
-      {
-        "label": "Temp. Range",
-        "value": "-20°C to +100°C"
-      },
-      {
-        "label": "Standard",
-        "value": "UL / CE Certified"
-      },
-      {
-        "label": "Color",
-        "value": "Black / Grey / RAL Custom"
-      }
-    ],
-    "image": "/images/cable_gland.png"
-  },
-  {
-    "id": "metal-junction-box",
-    "name": "Metal Junction Box",
-    "category": "Cable Glands & Junction Boxes",
-    "categorySlug": "cable-gland",
-    "description": "Heavy-duty powder-coated steel junction boxes for industrial and outdoor electrical installations.",
-    "icon": "📦",
-    "specs": [
-      {
-        "label": "Material",
-        "value": "MS Steel (Powder Coated)"
-      },
-      {
-        "label": "Sizes",
-        "value": "100×100mm to 600×400mm"
-      },
-      {
-        "label": "IP Rating",
-        "value": "IP55 / IP66"
-      },
-      {
-        "label": "Standard",
-        "value": "IS 2147"
-      },
-      {
-        "label": "Entry",
-        "value": "Knockouts / Threaded"
-      },
-      {
-        "label": "Color",
-        "value": "RAL 7035 Light Grey"
-      }
-    ],
-    "image": "/images/cable_gland.png"
-  },
-  {
-    "id": "cooler",
-    "name": "20mm",
+    "name": "Nylon Cable Gland",
     "category": "Cable Glands & Boxes",
     "categorySlug": "cable-gland",
-    "description": "kjshfkjlhsf",
-    "icon": "📦",
-    "badge": "new arrival",
+    "description": "Product Nylon Cable Gland Brand Rediant Energy Origin Made in India We manufacture and export Nylon Cable Gland in different sizes made from high-quality materials. The range of Nylon cable glands is designed accurately as per industrial requirements that provide the best functional results. It is used to attach at the end of the cables such that it can withstand the rigors of continuous bending. It is available in various colors and can also withstand mounting threads or long mounting threads and other harmful environmental factors. They are made with required industrial standards for the best application fit. Features Offer Tested Quality and Sturdy design for all types of application. Covers a full range with standard thread length and select extra-long thread for thick enclosure walls. Feature a bend-proof version for use with bend-sensitive cables. Available with \u2018O\u2019 Ring seal and lock as standard. Superior Ingress Protection, mechanical grip and cable retention. Highly durable with perfect finishing. Make maintenance work easier with good IP ratings.",
     "specs": [
       {
-        "label": "sdf",
-        "value": "sdfsdgdg"
+        "label": "Product",
+        "value": "Nylon Cable Gland"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
       }
-    ]
+    ],
+    "icon": "\ud83d\udd29",
+    "image": "/images/scraped/3-3.jpg"
+  },
+  {
+    "id": "cable-gland",
+    "name": "Cable Gland",
+    "category": "Cable Glands & Boxes",
+    "categorySlug": "cable-gland",
+    "description": "Product Nylon Cable Gland Brand Rediant Energy Origin Made in India Cable Gland are specially designed for use in the wind industry, manufacturing of machines, automotive Industry, solar energy, electric motors, generators, gear units, transportation. Features \u2022 Complete range of sizes. \u2022 Wide sealing and clamping range \u2022 Easy to install. \u2022 Integrated anchorage. \u2022 Metric and Pg thread available.",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "Nylon Cable Gland"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udd29",
+    "image": "/images/scraped/4-3.jpg"
+  },
+  {
+    "id": "pg-metal-cable-gland",
+    "name": "PG Metal Cable Gland",
+    "category": "Cable Glands & Boxes",
+    "categorySlug": "cable-gland",
+    "description": "Product PG Metal Cable Gland Brand Rediant Energy Origin Made in India Our organization is a trusted name of the industry, which is engaged in manufacturing, supplying, and exporting an unparalleled array of PG Cable Gland . The offered array of PG cable glands is designed &amp; developed by our professionals in compliance with the international quality standards. Further, our quality controllers carefully test the offered range of PG cable glands to ensure its flawlessness. Other features: Available with strain relief facility with round or hex intermediate sockets. Used indoor conditions inner ring frames positive armor clamp. Material is brass and nickel-plated.",
+    "specs": [
+      {
+        "label": "Product",
+        "value": "PG Metal Cable Gland"
+      },
+      {
+        "label": "Brand",
+        "value": "Rediant Energy"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in India"
+      }
+    ],
+    "icon": "\ud83d\udd29",
+    "image": "/images/scraped/untitled-design-7.jpg"
   }
 ]

@@ -31,12 +31,8 @@ export default function Hero() {
         }} />
       </div>
 
-      <div style={{
-        position: "relative", maxWidth: "1280px", margin: "0 auto",
-        padding: "6rem 2rem 7rem",
-      }}>
-        <div style={{ display: "grid", gridTemplateColumns: "7fr 5fr", gap: "5rem", alignItems: "center" }}
-          className="lg:grid-cols-[7fr_5fr] grid-cols-1">
+      <div className="relative max-w-[1280px] mx-auto py-16 md:py-24 px-4 sm:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-10 lg:gap-20 items-center">
 
           {/* ── Left Column ──────────────────────────── */}
           <div>
@@ -82,9 +78,8 @@ export default function Hero() {
             </div>
 
             {/* Stats */}
-            <div className="anim-fade-up" style={{
-              display: "grid", gridTemplateColumns: "repeat(4, 1fr)",
-              gap: "1.75rem", animationDelay: "0.2s",
+            <div className="anim-fade-up grid grid-cols-2 sm:grid-cols-4 gap-6" style={{
+              animationDelay: "0.2s",
             }}>
               {STATS.map((s) => (
                 <div key={s.label} style={{ borderLeft: "3px solid #F59E0B", paddingLeft: "1.125rem" }}>
@@ -99,7 +94,7 @@ export default function Hero() {
 
           {/* ── Right Column — Trust Card ─────────────── */}
           <div className="anim-fade-up" style={{ animationDelay: "0.24s" }}>
-            <div className="card-surface" style={{ padding: "2.25rem", position: "relative", overflow: "hidden" }}>
+            <div className="card-surface p-6 sm:p-9" style={{ position: "relative", overflow: "hidden" }}>
               {/* Amber corner accent */}
               <div style={{
                 position: "absolute", top: 0, right: 0, width: "100px", height: "100px",

@@ -39,6 +39,7 @@ function SpecModal({ product, onClose }: { product: Product; onClose: () => void
   const { addItem, isInCart } = useQuoteCart();
   const inCart = isInCart(product.id);
   const [mounted, setMounted] = useState(false);
+  const [imgError, setImgError] = useState(false);
 
   // Mount after hydration so createPortal works in SSR
   useEffect(() => { setMounted(true); }, []);
@@ -71,7 +72,7 @@ function SpecModal({ product, onClose }: { product: Product; onClose: () => void
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          padding: "1.5rem",
+          padding: "1rem",
         }}
         className="anim-fade-in"
       >
@@ -93,28 +94,28 @@ function SpecModal({ product, onClose }: { product: Product; onClose: () => void
           className="anim-scale-in"
         >
           {/* Header */}
-          <div style={{
-            padding: "1.75rem 2rem",
-            borderBottom: "1px solid rgba(148,163,184,0.15)",
-            display: "flex", alignItems: "flex-start",
-            justifyContent: "space-between", gap: "1rem",
-            flexShrink: 0,
-          }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-              <div style={{
-                width: "52px", height: "52px", borderRadius: "14px", flexShrink: 0,
-                background: "#FFFBEB", border: "1.5px solid #FDE68A",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                fontSize: "1.5rem",
-              }}>
-                {product.icon}
-              </div>
+          <div className="p-5 sm:p-7 border-b border-[rgba(148,163,184,0.15)] flex items-center justify-between gap-4 shrink-0">
+            <div className="flex items-center gap-4 sm:gap-5">
+              {product.image && !imgError ? (
+                <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-2xl shrink-0 border-[1.5px] border-[rgba(148,163,184,0.2)] flex items-center justify-center overflow-hidden bg-white shadow-[0_4px_12px_rgba(0,0,0,0.06)]">
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    onError={() => setImgError(true)}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+                  />
+                </div>
+              ) : (
+                <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-2xl shrink-0 bg-[#FFFBEB] border-[1.5px] border-[#FDE68A] flex items-center justify-center text-3xl sm:text-4xl">
+                  {product.icon}
+                </div>
+              )}
               <div>
-                <h2 style={{ fontSize: "1.15rem", fontWeight: 700, color: "#0F172A", marginBottom: "0.3rem" }}>
+                <h2 style={{ fontSize: "1.25rem", fontWeight: 700, color: "#0F172A", marginBottom: "0.4rem" }}>
                   {product.name}
                 </h2>
                 <p style={{
-                  fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em",
+                  fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em",
                   textTransform: "uppercase", color: "#94A3B8",
                 }}>
                   {product.category}
@@ -137,7 +138,7 @@ function SpecModal({ product, onClose }: { product: Product; onClose: () => void
           </div>
 
           {/* Scrollable Body */}
-          <div style={{ overflowY: "auto", padding: "2rem", flex: 1 }}>
+          <div className="overflow-y-auto p-5 sm:p-8 flex-1">
             {/* Description */}
             <p style={{ color: "#64748B", fontSize: "0.92rem", lineHeight: 1.8, marginBottom: "2rem" }}>
               {product.description}
@@ -185,13 +186,7 @@ function SpecModal({ product, onClose }: { product: Product; onClose: () => void
           </div>
 
           {/* Footer Actions */}
-          <div style={{
-            padding: "1.5rem 2rem",
-            borderTop: "1px solid rgba(148,163,184,0.15)",
-            background: "#F8FAFC",
-            display: "flex", gap: "0.875rem",
-            flexShrink: 0,
-          }}>
+          <div className="p-5 sm:px-8 sm:py-6 border-t border-[rgba(148,163,184,0.15)] bg-[#F8FAFC] flex flex-col sm:flex-row gap-3 shrink-0">
             <Link
               href={`/contact?product=${encodeURIComponent(product.name)}`}
               onClick={onClose}
@@ -448,8 +443,8 @@ export default function CatalogSection() {
     activeMaterial !== "All Materials" || activeCert !== "All Certifications" || activeSize !== "All Sizes";
 
   return (
-    <section id="catalog" className="section-canvas" style={{ padding: "7rem 0" }}>
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 2rem" }}>
+    <section id="catalog" className="section-canvas py-16 md:py-28">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
 
         {/* ── Section Header ──────────────────────────── */}
         <div style={{ marginBottom: "3.5rem" }}>
@@ -544,7 +539,7 @@ export default function CatalogSection() {
           </div>
 
           {/* Advanced Dropdowns — 3-col grid with proper labels */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.25rem" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
               { label: "Material Composition", value: activeMaterial, set: setActiveMaterial, opts: MATERIAL_OPTIONS },
               { label: "Sizing Scale", value: activeSize, set: setActiveSize, opts: SIZE_OPTIONS },
@@ -575,13 +570,7 @@ export default function CatalogSection() {
             <button onClick={clearFilters} className="btn-amber">Clear All Filters</button>
           </div>
         ) : (
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "1.75rem",
-          }}
-            className="sm:grid-cols-2 lg:grid-cols-3"
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {filtered.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

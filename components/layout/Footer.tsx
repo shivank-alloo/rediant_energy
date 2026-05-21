@@ -17,12 +17,8 @@ export default function Footer() {
     <footer style={{ background: "#0F172A" }}>
 
       {/* Main Grid */}
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "6rem 2rem 5rem" }}>
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "1.4fr 1fr 1fr 1.2fr",
-          gap: "4rem",
-        }}>
+      <div className="max-w-[1280px] mx-auto py-16 md:py-24 px-4 sm:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-10 lg:gap-16">
 
           {/* ── Brand Column ─────────────────── */}
           <div>
@@ -182,15 +178,11 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-        <div style={{
-          maxWidth: "1280px", margin: "0 auto",
-          padding: "1.5rem 2rem",
-          display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem", flexWrap: "wrap",
-        }}>
-          <p style={{ color: "#334155", fontSize: "0.82rem" }}>
+        <div className="max-w-[1280px] mx-auto py-6 px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+          <p style={{ color: "#64748B", fontSize: "0.82rem" }}>
             © {new Date().getFullYear()} Rediant Energy Services. All rights reserved.
           </p>
-          <p style={{ color: "#1E293B", fontSize: "0.82rem" }}>
+          <p style={{ color: "#64748B", fontSize: "0.82rem" }}>
             GST Registered · ISO 9001:2015 Certified · Mumbai, India
           </p>
         </div>

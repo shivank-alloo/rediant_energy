@@ -83,7 +83,7 @@ export default function QuoteCartDrawer() {
                 <div className="flex flex-col items-center justify-center h-40 gap-3 text-center">
                   <ShoppingCart size={28} className="text-slate-200" />
                   <p className="text-slate-400 text-sm">Your RFQ list is empty.</p>
-                  <p className="text-slate-300 text-xs">Browse products and click "Add to RFQ"</p>
+                  <p className="text-slate-300 text-xs">Browse products and click &quot;Add to RFQ&quot;</p>
                 </div>
               ) : (
                 items.map((item) => (

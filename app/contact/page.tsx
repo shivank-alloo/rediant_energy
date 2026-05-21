@@ -73,11 +73,7 @@ function ContactForm() {
     <div style={{ minHeight: "100vh", background: "#F8FAFC" }}>
 
       {/* ── Page Hero ──────────────────────────────── */}
-      <section style={{
-        background: "#FFFFFF",
-        borderBottom: "1px solid rgba(148,163,184,0.2)",
-        padding: "5rem 2rem",
-      }}>
+      <section className="bg-white border-b border-[rgba(148,163,184,0.2)] py-12 md:py-20 px-4 sm:px-8">
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <p className="type-label" style={{ marginBottom: "1rem" }}>Technical Inquiry</p>
           <h1 className="type-h1" style={{ marginBottom: "1.25rem", maxWidth: "600px" }}>
@@ -99,11 +95,8 @@ function ContactForm() {
       </section>
 
       {/* ── Main Content ────────────────────────────── */}
-      <section style={{ padding: "5rem 2rem" }}>
-        <div style={{
-          maxWidth: "1280px", margin: "0 auto",
-          display: "grid", gridTemplateColumns: "2fr 3fr", gap: "3.5rem",
-        }}>
+      <section className="py-12 md:py-20 px-4 sm:px-8">
+        <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 lg:gap-14">
 
           {/* ── Left Info Panel ──────────────────────── */}
           <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
@@ -304,11 +297,7 @@ function ContactForm() {
             ) : (
               <div className="card-surface" style={{ overflow: "hidden" }}>
                 {/* Step Indicator */}
-                <div style={{
-                  padding: "1.75rem 2.25rem",
-                  background: "#F8FAFC",
-                  borderBottom: "1px solid rgba(148,163,184,0.15)",
-                }}>
+                <div className="p-4 sm:px-9 sm:py-7 bg-[#F8FAFC] border-b border-[rgba(148,163,184,0.15)]">
                   <div style={{ display: "flex", alignItems: "center" }}>
                     {STEPS.map((s, i) => {
                       const isActive = step === s.id;
@@ -335,7 +324,7 @@ function ContactForm() {
                             }}>
                               {isDone ? "✓" : s.id}
                             </div>
-                            <span style={{ fontSize: "0.85rem", fontWeight: 600 }}>{s.label}</span>
+                            <span className="hidden sm:inline" style={{ fontSize: "0.85rem", fontWeight: 600 }}>{s.label}</span>
                           </button>
                           {i < STEPS.length - 1 && (
                             <div style={{
@@ -366,7 +355,7 @@ function ContactForm() {
                     setSubmitting(false);
                   }
                 }}>
-                  <div style={{ padding: "2.25rem" }}>
+                  <div className="p-5 sm:p-9">
                     {/* Error message */}
                     {errorMsg && (
                       <div style={{
@@ -383,7 +372,7 @@ function ContactForm() {
                       <div>
                         <h2 className="type-h2" style={{ marginBottom: "0.75rem" }}>Your Details</h2>
                         <p style={{ color: "#64748B", marginBottom: "2rem", lineHeight: 1.7 }}>Tell us about yourself and your organisation.</p>
-                        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                           {[
                             { key: "name",    label: "Full Name",        placeholder: "John Doe",             type: "text"  },
                             { key: "company", label: "Company Name",     placeholder: "Acme Industries Ltd.", type: "text"  },
@@ -417,7 +406,7 @@ function ContactForm() {
                         <h2 className="type-h2" style={{ marginBottom: "0.75rem" }}>Product Requirements</h2>
                         <p style={{ color: "#64748B", marginBottom: "2rem", lineHeight: 1.7 }}>Specify the products, quantities, and relevant standards.</p>
                         <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
-                          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
                               <label style={{ display: "block", marginBottom: "0.625rem", fontSize: "0.82rem", fontWeight: 600, color: "#475569" }}>
                                 Product Category <span style={{ color: "#F59E0B" }}>*</span>
@@ -518,12 +507,7 @@ function ContactForm() {
                   </div>
 
                   {/* Form Footer */}
-                  <div style={{
-                    padding: "1.5rem 2.25rem",
-                    background: "#F8FAFC",
-                    borderTop: "1px solid rgba(148,163,184,0.15)",
-                    display: "flex", alignItems: "center", justifyContent: "space-between",
-                  }}>
+                  <div className="p-5 sm:px-9 sm:py-6 bg-[#F8FAFC] border-t border-[rgba(148,163,184,0.15)] flex items-center justify-between">
                     <button
                       type="button" onClick={() => setStep((s) => Math.max(1, s - 1))}
                       className="btn-ghost"
