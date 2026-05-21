@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import { Search, Plus, Check, X, SlidersHorizontal, FileText, ExternalLink } from "lucide-react";
 import { PRODUCTS, CATEGORIES, Product } from "@/lib/products";
 import { useQuoteCart } from "@/context/QuoteCartContext";
+import { getProducts } from "@/app/actions/products";
 import Link from "next/link";
 
 const MATERIAL_OPTIONS = [
@@ -380,6 +381,7 @@ function ProductCard({ product }: { product: Product }) {
 
 /* ── Main Section ───────────────────────────────────── */
 export default function CatalogSection() {
+  const [productsList, setProductsList] = useState<Product[]>(PRODUCTS);
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [showAC, setShowAC] = useState(false);
@@ -388,6 +390,14 @@ export default function CatalogSection() {
   const [activeCert, setActiveCert] = useState("All Certifications");
   const [activeSize, setActiveSize] = useState("All Sizes");
   const searchRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    getProducts().then((res) => {
+      if (res && res.length > 0) {
+        setProductsList(res);
+      }
+    });
+  }, []);
 
   useEffect(() => {
     const t = setTimeout(() => setDebouncedQuery(searchQuery), 220);
@@ -404,15 +414,15 @@ export default function CatalogSection() {
 
   const suggestions = useMemo(() => {
     if (!debouncedQuery.trim() || debouncedQuery.length < 2) return [];
-    return PRODUCTS.filter(
+    return productsList.filter(
       (p) =>
         p.name.toLowerCase().includes(debouncedQuery.toLowerCase()) ||
         p.category.toLowerCase().includes(debouncedQuery.toLowerCase())
     ).slice(0, 6);
-  }, [debouncedQuery]);
+  }, [debouncedQuery, productsList]);
 
   const filtered = useMemo(() => {
-    return PRODUCTS.filter((p) => {
+    return productsList.filter((p) => {
       const q = debouncedQuery.toLowerCase();
       const matchSearch = !q ||
         p.name.toLowerCase().includes(q) ||
@@ -426,7 +436,7 @@ export default function CatalogSection() {
         p.specs.some((s) => s.value.toLowerCase().includes(activeCert.toLowerCase().split(" ")[0]));
       return matchSearch && matchCat && matchMat && matchCert;
     });
-  }, [debouncedQuery, activeCategory, activeMaterial, activeCert]);
+  }, [debouncedQuery, activeCategory, activeMaterial, activeCert, productsList]);
 
   const clearFilters = () => {
     setSearchQuery(""); setDebouncedQuery("");

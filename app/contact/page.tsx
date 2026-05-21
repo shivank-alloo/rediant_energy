@@ -6,8 +6,9 @@ import {
   MapPin, Phone, Mail, Clock, ChevronRight, CheckCircle,
   Building2, Package, MessageSquare, Send, Upload, Loader2,
 } from "lucide-react";
-import { CATEGORIES, PRODUCTS } from "@/lib/products";
+import { CATEGORIES, PRODUCTS, Product } from "@/lib/products";
 import { submitInquiry } from "@/app/actions/inquiry";
+import { getProducts } from "@/app/actions/products";
 
 const STEPS = [
   { id: 1, label: "Your Details",  icon: Building2 },
@@ -34,6 +35,7 @@ function ContactForm() {
   const searchParams = useSearchParams();
   const productParam = searchParams.get("product");
 
+  const [productsList, setProductsList] = useState<Product[]>(PRODUCTS);
   const [step, setStep] = useState(1);
   const [form, setForm] = useState({
     name: "", company: "", email: "", phone: "",
@@ -44,8 +46,16 @@ function ContactForm() {
   const [errorMsg, setErrorMsg] = useState("");
 
   useEffect(() => {
+    getProducts().then((res) => {
+      if (res && res.length > 0) {
+        setProductsList(res);
+      }
+    });
+  }, []);
+
+  useEffect(() => {
     if (productParam) {
-      const p = PRODUCTS.find((x) => x.name.toLowerCase() === productParam.toLowerCase());
+      const p = productsList.find((x) => x.name.toLowerCase() === productParam.toLowerCase());
       if (p) {
         setForm((prev) => ({
           ...prev,
@@ -55,7 +65,7 @@ function ContactForm() {
         }));
       }
     }
-  }, [productParam]);
+  }, [productParam, productsList]);
 
   const upd = (k: string, v: string) => setForm((p) => ({ ...p, [k]: v }));
 
