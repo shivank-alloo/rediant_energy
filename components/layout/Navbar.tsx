@@ -90,9 +90,9 @@ export default function Navbar() {
               +91 93241 09605
             </a>
             <span className="text-slate-700 hidden sm:block">|</span>
-            <a href="mailto:sales@rediantenergy.com" className="hidden sm:flex items-center gap-1.5 hover:text-white transition-colors duration-150">
+            <a href="mailto:rediantenergy@gmail.com" className="hidden sm:flex items-center gap-1.5 hover:text-white transition-colors duration-150">
               <Mail size={11} />
-              sales@rediantenergy.com
+              rediantenergy@gmail.com
             </a>
           </div>
           <div className="flex items-center gap-3">

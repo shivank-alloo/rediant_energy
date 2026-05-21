@@ -162,7 +162,7 @@ function ContactForm() {
                 </a>
 
                 {/* Email */}
-                <a href="mailto:sales@rediantenergy.com" style={{ display: "flex", alignItems: "center", gap: "1rem", textDecoration: "none" }}>
+                <a href="mailto:rediantenergy@gmail.com" style={{ display: "flex", alignItems: "center", gap: "1rem", textDecoration: "none" }}>
                   <div style={{
                     width: "48px", height: "48px", borderRadius: "12px", flexShrink: 0,
                     background: "#FFFBEB", border: "1.5px solid #FDE68A",
@@ -172,7 +172,7 @@ function ContactForm() {
                   </div>
                   <div>
                     <div style={{ fontSize: "0.72rem", color: "#94A3B8", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.25rem" }}>Email</div>
-                    <div style={{ fontSize: "0.9rem", fontWeight: 700, color: "#0F172A" }}>sales@rediantenergy.com</div>
+                    <div style={{ fontSize: "0.9rem", fontWeight: 700, color: "#0F172A" }}>rediantenergy@gmail.com</div>
                   </div>
                 </a>
 

@@ -157,14 +157,14 @@ export default function Footer() {
               </a>
 
               {/* Email */}
-              <a href="mailto:sales@rediantenergy.com" style={{
+              <a href="mailto:rediantenergy@gmail.com" style={{
                 display: "flex", alignItems: "center", gap: "0.875rem",
                 textDecoration: "none",
               }}>
                 <Mail size={14} style={{ color: "#F59E0B", flexShrink: 0 }} />
                 <span style={{ color: "#64748B", fontSize: "0.875rem", transition: "color 0.15s" }}
                   className="hover:!text-white">
-                  sales@rediantenergy.com
+                  rediantenergy@gmail.com
                 </span>
               </a>
             </div>

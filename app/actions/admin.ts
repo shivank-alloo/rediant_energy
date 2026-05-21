@@ -12,7 +12,7 @@ const ADMIN_ACCOUNTS = (() => {
   }
   return [
     { email: "admin@rediantenergy.com", password: "rediant_admin" },
-    { email: "sales@rediantenergy.com", password: "sales_admin" },
+    { email: "rediantenergy@gmail.com", password: "sales_admin" },
     { email: "shivankt589@gmail.com", password: "shivank123" },
   ];
 })();

@@ -37,14 +37,14 @@ export async function submitInquiry(data: InquiryData) {
     inquiries.push(newInquiry);
     await fs.writeFile(filePath, JSON.stringify(inquiries, null, 2), "utf-8");
 
-    // Simulating sending email to sales@rediant_energy.com
+    // Simulating sending email to rediantenergy@gmail.com
     const emailDir = path.join(process.cwd(), "sent_emails");
     try {
       await fs.mkdir(emailDir, { recursive: true });
     } catch (e) {}
 
     const emailContent = `From: web-forms@rediantenergy.com
-To: sales@rediant_energy.com
+To: rediantenergy@gmail.com
 Subject: 📩 [NEW RFQ - ID: ${newInquiry.id}] ${newInquiry.category.toUpperCase()} Inquiry from ${newInquiry.company}
 Date: ${newInquiry.timestamp}
 
