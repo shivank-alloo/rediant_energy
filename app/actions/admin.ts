@@ -5,6 +5,7 @@ import { cookies } from "next/headers";
 const ADMIN_ACCOUNTS = [
   { email: "admin@rediantenergy.com", password: "rediant_admin" },
   { email: "sales@rediantenergy.com", password: "sales_admin" },
+  { email: "shivankt589@gmail.com", password: "shivank123" },
 ];
 
 const SESSION_COOKIE = "rediant_admin_session";
