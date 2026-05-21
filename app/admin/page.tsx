@@ -329,6 +329,10 @@ function SpecsEditorModal({
               </select>
             </div>
             <div style={{ gridColumn: "1 / -1" }}>
+              <label style={labelStyle}>Image Path (optional)</label>
+              <input style={inputStyle} value={form.image ?? ""} onChange={(e) => updateField("image", e.target.value)} placeholder="e.g. /images/earthing_electrode.png" />
+            </div>
+            <div style={{ gridColumn: "1 / -1" }}>
               <label style={labelStyle}>Description</label>
               <textarea
                 style={{ ...inputStyle, minHeight: "80px", resize: "vertical", lineHeight: 1.6 }}
@@ -434,7 +438,7 @@ function SpecsEditorModal({
 function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (p: Product) => void }) {
   const [form, setForm] = useState<Product>({
     id: "", name: "", category: "Earthing & Grounding", categorySlug: "earthing",
-    description: "", icon: "📦", badge: "", specs: [{ label: "", value: "" }],
+    description: "", icon: "📦", badge: "", image: "", specs: [{ label: "", value: "" }],
   });
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
@@ -548,6 +552,11 @@ function AddProductModal({ onClose, onAdded }: { onClose: () => void; onAdded: (
                   <option key={c.slug} value={c.slug}>{c.label}</option>
                 ))}
               </select>
+            </div>
+            <div style={{ gridColumn: "1 / -1" }}>
+              <label style={labelStyle}>Image Path (optional)</label>
+              <input style={inputStyle} placeholder="e.g. /images/earthing_electrode.png" value={form.image ?? ""}
+                onChange={(e) => setForm((p) => ({ ...p, image: e.target.value }))} />
             </div>
             <div style={{ gridColumn: "1 / -1" }}>
               <label style={labelStyle}>Description</label>

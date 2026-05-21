@@ -12,6 +12,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, viewMode }: ProductCardProps) {
   const [flipped, setFlipped] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const { addItem, removeItem, isInCart } = useQuoteCart();
   const inCart = isInCart(product.id);
 
@@ -27,7 +28,18 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
         {/* Header row */}
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">{product.icon}</span>
+            {product.image && !imgError ? (
+              <div className="w-8 h-8 rounded-lg bg-white border border-white/10 flex items-center justify-center overflow-hidden shrink-0">
+                <img 
+                  src={product.image} 
+                  alt={product.name} 
+                  onError={() => setImgError(true)}
+                  className="w-full h-full object-cover" 
+                />
+              </div>
+            ) : (
+              <span className="text-2xl">{product.icon}</span>
+            )}
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="text-white font-medium text-sm">{product.name}</h3>
@@ -82,10 +94,21 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
             <span className="badge-accent self-start">{product.badge}</span>
           )}
 
-          {/* Icon */}
-          <div className="w-14 h-14 rounded-xl bg-[rgba(0,242,254,0.08)] border border-[rgba(0,242,254,0.12)] flex items-center justify-center text-3xl">
-            {product.icon}
-          </div>
+          {/* Icon / Image */}
+          {product.image && !imgError ? (
+            <div className="w-14 h-14 rounded-xl bg-white border border-white/10 flex items-center justify-center overflow-hidden shrink-0">
+              <img 
+                src={product.image} 
+                alt={product.name} 
+                onError={() => setImgError(true)}
+                className="w-full h-full object-cover" 
+              />
+            </div>
+          ) : (
+            <div className="w-14 h-14 rounded-xl bg-[rgba(0,242,254,0.08)] border border-[rgba(0,242,254,0.12)] flex items-center justify-center text-3xl">
+              {product.icon}
+            </div>
+          )}
 
           {/* Name & Category */}
           <div className="flex-1">

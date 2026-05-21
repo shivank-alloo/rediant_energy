@@ -32,7 +32,8 @@
         "label": "Life Span",
         "value": "20+ Years"
       }
-    ]
+    ],
+    "image": "/images/earthing_electrode.png"
   },
   {
     "id": "pit-chamber",
@@ -66,7 +67,8 @@
         "label": "Finish",
         "value": "Hot-Dip Galvanized"
       }
-    ]
+    ],
+    "image": "/images/earthing_electrode.png"
   },
   {
     "id": "gi-strip",
@@ -100,7 +102,8 @@
         "label": "Application",
         "value": "Panel / Structural"
       }
-    ]
+    ],
+    "image": "/images/earthing_electrode.png"
   },
   {
     "id": "gi-perforated-tray",
@@ -135,7 +138,8 @@
         "label": "Load",
         "value": "Up to 75 kg/m"
       }
-    ]
+    ],
+    "image": "/images/cable_tray.png"
   },
   {
     "id": "gi-ladder-tray",
@@ -169,7 +173,8 @@
         "label": "Load Capacity",
         "value": "Up to 200 kg/m"
       }
-    ]
+    ],
+    "image": "/images/cable_tray.png"
   },
   {
     "id": "aluminum-tray",
@@ -203,7 +208,8 @@
         "label": "Corrosion",
         "value": "Excellent Resistance"
       }
-    ]
+    ],
+    "image": "/images/cable_tray.png"
   },
   {
     "id": "mono-perc-panel",
@@ -238,7 +244,8 @@
         "label": "Warranty",
         "value": "25 Years Performance"
       }
-    ]
+    ],
+    "image": "/images/solar_panel.png"
   },
   {
     "id": "on-grid-inverter",
@@ -272,7 +279,8 @@
         "label": "Monitoring",
         "value": "Wi-Fi / RS485"
       }
-    ]
+    ],
+    "image": "/images/solar_panel.png"
   },
   {
     "id": "solar-mounting",
@@ -306,7 +314,8 @@
         "label": "Life",
         "value": "25 Years"
       }
-    ]
+    ],
+    "image": "/images/solar_panel.png"
   },
   {
     "id": "led-street-light-100w",
@@ -341,7 +350,8 @@
         "label": "Life Span",
         "value": "50,000 Hours"
       }
-    ]
+    ],
+    "image": "/images/led_light.png"
   },
   {
     "id": "led-highbay-200w",
@@ -375,7 +385,8 @@
         "label": "Beam Angle",
         "value": "90° / 120°"
       }
-    ]
+    ],
+    "image": "/images/led_light.png"
   },
   {
     "id": "led-panel-light",
@@ -409,7 +420,8 @@
         "label": "Driver",
         "value": "Integrated Flicker-Free"
       }
-    ]
+    ],
+    "image": "/images/led_light.png"
   },
   {
     "id": "fr-pvc-wire",
@@ -444,7 +456,8 @@
         "label": "Temperature",
         "value": "-20°C to +70°C"
       }
-    ]
+    ],
+    "image": "/images/armoured_cable.png"
   },
   {
     "id": "armoured-cable",
@@ -478,7 +491,8 @@
         "label": "Voltage",
         "value": "1.1kV / 3.3kV / 11kV"
       }
-    ]
+    ],
+    "image": "/images/armoured_cable.png"
   },
   {
     "id": "flexible-cable",
@@ -512,7 +526,8 @@
         "label": "Flex Rating",
         "value": "Class 5 Flex"
       }
-    ]
+    ],
+    "image": "/images/armoured_cable.png"
   },
   {
     "id": "brass-cable-gland-a1",
@@ -547,7 +562,8 @@
         "label": "Armour",
         "value": "Unarmoured Only"
       }
-    ]
+    ],
+    "image": "/images/cable_gland.png"
   },
   {
     "id": "brass-cable-gland-a2",
@@ -581,7 +597,8 @@
         "label": "Armour",
         "value": "SWA / STA Armoured"
       }
-    ]
+    ],
+    "image": "/images/cable_gland.png"
   },
   {
     "id": "nylon-cable-gland",
@@ -615,7 +632,8 @@
         "label": "Color",
         "value": "Black / Grey / RAL Custom"
       }
-    ]
+    ],
+    "image": "/images/cable_gland.png"
   },
   {
     "id": "metal-junction-box",
@@ -648,6 +666,22 @@
       {
         "label": "Color",
         "value": "RAL 7035 Light Grey"
+      }
+    ],
+    "image": "/images/cable_gland.png"
+  },
+  {
+    "id": "cooler",
+    "name": "20mm",
+    "category": "Cable Glands & Boxes",
+    "categorySlug": "cable-gland",
+    "description": "kjshfkjlhsf",
+    "icon": "📦",
+    "badge": "new arrival",
+    "specs": [
+      {
+        "label": "sdf",
+        "value": "sdfsdgdg"
       }
     ]
   }

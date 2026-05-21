@@ -14,6 +14,7 @@ export interface Product {
   specs: ProductSpec[];
   badge?: string;
   icon: string;
+  image?: string;
 }
 
 export const CATEGORIES = [
@@ -33,6 +34,7 @@ export const PRODUCTS: Product[] = [
     name: "Chemical Earthing Electrode",
     category: "Earthing & Grounding",
     categorySlug: "earthing",
+    image: "/images/earthing_electrode.png",
     description: "Maintenance-free chemical earthing system with backfill compound for superior conductivity.",
     badge: "Best Seller",
     icon: "⚡",
@@ -50,6 +52,7 @@ export const PRODUCTS: Product[] = [
     name: "Earthing Pit Chamber",
     category: "Earthing & Grounding",
     categorySlug: "earthing",
+    image: "/images/earthing_electrode.png",
     description: "Heavy-duty CI/RCC inspection pit chambers with lockable covers for maintenance access.",
     icon: "🔋",
     specs: [
@@ -66,6 +69,7 @@ export const PRODUCTS: Product[] = [
     name: "GI Earthing Strip",
     category: "Earthing & Grounding",
     categorySlug: "earthing",
+    image: "/images/earthing_electrode.png",
     description: "Hot-dip galvanized earthing strip for busbars, panels, and structural earthing.",
     icon: "➖",
     specs: [
@@ -84,6 +88,7 @@ export const PRODUCTS: Product[] = [
     name: "GI Perforated Cable Tray",
     category: "Cable Trays & Ladders",
     categorySlug: "cable-tray",
+    image: "/images/cable_tray.png",
     description: "Heavy-gauge hot-dip galvanized perforated trays for industrial cable routing.",
     badge: "Best Seller",
     icon: "📐",
@@ -101,6 +106,7 @@ export const PRODUCTS: Product[] = [
     name: "GI Ladder Cable Tray",
     category: "Cable Trays & Ladders",
     categorySlug: "cable-tray",
+    image: "/images/cable_tray.png",
     description: "Ladder-type cable trays for large, heavy power and armoured cable installations.",
     icon: "🪜",
     specs: [
@@ -117,6 +123,7 @@ export const PRODUCTS: Product[] = [
     name: "Aluminium Cable Tray",
     category: "Cable Trays & Ladders",
     categorySlug: "cable-tray",
+    image: "/images/cable_tray.png",
     description: "Lightweight extruded aluminium trays ideal for offshore, marine, and corrosive environments.",
     icon: "🔩",
     specs: [
@@ -135,6 +142,7 @@ export const PRODUCTS: Product[] = [
     name: "Mono PERC Solar Panel",
     category: "Solar Energy Systems",
     categorySlug: "solar",
+    image: "/images/solar_panel.png",
     description: "High-efficiency monocrystalline PERC panels for commercial and industrial rooftop installations.",
     badge: "Popular",
     icon: "☀️",
@@ -152,6 +160,7 @@ export const PRODUCTS: Product[] = [
     name: "On-Grid Solar Inverter",
     category: "Solar Energy Systems",
     categorySlug: "solar",
+    image: "/images/solar_panel.png",
     description: "String inverters with MPPT tracking and remote monitoring for grid-tied systems.",
     icon: "⚙️",
     specs: [
@@ -168,6 +177,7 @@ export const PRODUCTS: Product[] = [
     name: "Solar Mounting Structure",
     category: "Solar Energy Systems",
     categorySlug: "solar",
+    image: "/images/solar_panel.png",
     description: "Hot-dip galvanized steel mounting structures for flat rooftop and ground-mounted systems.",
     icon: "🏗️",
     specs: [
@@ -186,6 +196,7 @@ export const PRODUCTS: Product[] = [
     name: "LED Street Light 100W",
     category: "Industrial LED Lighting",
     categorySlug: "led",
+    image: "/images/led_light.png",
     description: "High-lumen LED street lights with photocell control for roads, highways, and industrial areas.",
     badge: "Best Seller",
     icon: "💡",
@@ -203,6 +214,7 @@ export const PRODUCTS: Product[] = [
     name: "LED High Bay Light 200W",
     category: "Industrial LED Lighting",
     categorySlug: "led",
+    image: "/images/led_light.png",
     description: "Industrial high-bay LED fittings for warehouses, factories, and sports facilities.",
     icon: "🔦",
     specs: [
@@ -219,6 +231,7 @@ export const PRODUCTS: Product[] = [
     name: "LED Panel Light 40W",
     category: "Industrial LED Lighting",
     categorySlug: "led",
+    image: "/images/led_light.png",
     description: "Ultra-slim LED panel lights for commercial offices, hospitals, and clean rooms.",
     icon: "🟦",
     specs: [
@@ -237,6 +250,7 @@ export const PRODUCTS: Product[] = [
     name: "FR PVC Copper Wire",
     category: "Wires & Armoured Cables",
     categorySlug: "cables",
+    image: "/images/armoured_cable.png",
     description: "Flame retardant PVC insulated copper conductor wires for industrial and household wiring.",
     badge: "ISO Certified",
     icon: "🔌",
@@ -254,6 +268,7 @@ export const PRODUCTS: Product[] = [
     name: "Armoured SWA Power Cable",
     category: "Wires & Armoured Cables",
     categorySlug: "cables",
+    image: "/images/armoured_cable.png",
     description: "Steel wire armoured XLPE insulated power cables for heavy industrial and underground installations.",
     icon: "🧶",
     specs: [
@@ -270,6 +285,7 @@ export const PRODUCTS: Product[] = [
     name: "Industrial Flexible Cable",
     category: "Wires & Armoured Cables",
     categorySlug: "cables",
+    image: "/images/armoured_cable.png",
     description: "Multi-core flexible cables for motor connections, machinery, and control panels.",
     icon: "〰️",
     specs: [
@@ -288,6 +304,7 @@ export const PRODUCTS: Product[] = [
     name: "Brass Cable Gland Type A1",
     category: "Cable Glands & Junction Boxes",
     categorySlug: "cable-gland",
+    image: "/images/cable_gland.png",
     description: "Type A1 brass cable glands for single-core and plastic sheathed cables without armour.",
     badge: "Best Seller",
     icon: "🔩",
@@ -305,6 +322,7 @@ export const PRODUCTS: Product[] = [
     name: "Brass Cable Gland Type A2",
     category: "Cable Glands & Junction Boxes",
     categorySlug: "cable-gland",
+    image: "/images/cable_gland.png",
     description: "Type A2 brass glands for SWA and armoured cables with earth continuity.",
     icon: "⚙️",
     specs: [
@@ -321,6 +339,7 @@ export const PRODUCTS: Product[] = [
     name: "Nylon PG Cable Gland",
     category: "Cable Glands & Junction Boxes",
     categorySlug: "cable-gland",
+    image: "/images/cable_gland.png",
     description: "PA66 nylon glands with excellent chemical resistance for light industrial and enclosure use.",
     icon: "🔵",
     specs: [
@@ -337,6 +356,7 @@ export const PRODUCTS: Product[] = [
     name: "Metal Junction Box",
     category: "Cable Glands & Junction Boxes",
     categorySlug: "cable-gland",
+    image: "/images/cable_gland.png",
     description: "Heavy-duty powder-coated steel junction boxes for industrial and outdoor electrical installations.",
     icon: "📦",
     specs: [

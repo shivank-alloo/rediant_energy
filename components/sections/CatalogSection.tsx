@@ -224,6 +224,7 @@ function ProductCard({ product }: { product: Product }) {
   const inCart = isInCart(product.id);
   const [activeTab, setActiveTab] = useState<"specs" | "dims" | "certs">("specs");
   const [showModal, setShowModal] = useState(false);
+  const [imgError, setImgError] = useState(false);
 
   return (
     <div className="card-surface flex flex-col overflow-hidden group">
@@ -231,18 +232,39 @@ function ProductCard({ product }: { product: Product }) {
       {/* Header */}
       <div style={{ padding: "1.75rem 1.75rem 1.25rem" }}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: "1rem" }}>
-          {/* Icon */}
-          <div
-            style={{
-              width: "52px", height: "52px", borderRadius: "14px", flexShrink: 0,
-              background: "#F8FAFC", border: "1.5px solid rgba(148,163,184,0.25)",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              fontSize: "1.5rem", transition: "all 0.3s",
-            }}
-            className="group-hover:!bg-amber-50 group-hover:!border-amber-200"
-          >
-            {product.icon}
-          </div>
+          {/* Icon / Image */}
+          {product.image && !imgError ? (
+            <div
+              style={{
+                width: "52px", height: "52px", borderRadius: "14px", flexShrink: 0,
+                border: "1.5px solid rgba(148,163,184,0.2)",
+                display: "flex", alignItems: "center", justifyContent: "center",
+                overflow: "hidden", transition: "all 0.3s",
+                background: "#FFFFFF",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+              }}
+              className="group-hover:!border-amber-300 group-hover:shadow-sm"
+            >
+              <img 
+                src={product.image} 
+                alt={product.name} 
+                onError={() => setImgError(true)}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+              />
+            </div>
+          ) : (
+            <div
+              style={{
+                width: "52px", height: "52px", borderRadius: "14px", flexShrink: 0,
+                background: "#F8FAFC", border: "1.5px solid rgba(148,163,184,0.25)",
+                display: "flex", alignItems: "center", justifyContent: "center",
+                fontSize: "1.5rem", transition: "all 0.3s",
+              }}
+              className="group-hover:!bg-amber-50 group-hover:!border-amber-200"
+            >
+              {product.icon}
+            </div>
+          )}
 
           {/* Title */}
           <div style={{ flex: 1, minWidth: 0 }}>
